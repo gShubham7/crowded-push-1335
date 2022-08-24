@@ -1,0 +1,180 @@
+#logo_div {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.logo {
+    max-width: 40rem;
+    max-height: 10rem;
+    margin: auto;
+}
+
+.img {
+    position: absolute;
+    top: -150px;
+    width: 175%;
+    left: 0;
+    z-index: -1;
+    height: 100vmax;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+form {
+    background-color: white;
+    border-radius: 0.8em;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    padding: 3rem;
+    color: #212529;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+#mail {
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #afcbe7;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    margin: 9px 0;
+}
+
+.note {
+    font-size: 0.98rem;
+    line-height: 30px;
+}
+
+#captcha_checkbox {
+    width: 26px;
+    height: 26px;
+    position: relative;
+    left: 58px;
+    bottom: 33px;
+}
+
+#captcha>img {
+    width: 70%;
+    border: 1px solid black;
+}
+
+#btns>a {
+    text-decoration: none;
+    color: #006da8;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#btns>input {
+    color: #fff;
+    background-color: #006da8;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.5rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#err_msg {
+    display: none;
+    color: red;
+}
+
+#faq {
+    text-align: center;
+}
+
+#faq>a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10rem 0;
+}
+
+#footer>* {
+    margin: 0 1rem;
+}
+
+#faq>a:hover,
+#footer>a:hover {
+    color: #006da8;
+    cursor: pointer;
+}
+
+@media all and (min-width:320px) and (max-width:680px) {
+    .logo {
+        width: 80%;
+    }
+
+    #welcome {
+        font-size: 1.2rem;
+    }
+
+    #welcome+div {
+        font-size: 0.9rem;
+    }
+
+    .img {
+        position: static;
+        width: 100vw;
+        height: auto;
+    }
+
+    form {
+        width: auto;
+        padding: 1.5rem;
+    }
+
+    #mail {
+        width: 100%;
+    }
+
+    form>div {
+        display: grid;
+        grid-template-columns: 1, 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input_div {
+        display: block;
+    }
+}

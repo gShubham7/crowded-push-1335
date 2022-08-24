@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkAmerica: Get Started-Welcome</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://scontent.fpnq7-4.fna.fbcdn.net/v/t1.6435-9/131324587_104016418251178_3179768484877312106_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mZK9Ey-vE-MAX8XdART&_nc_ht=scontent.fpnq7-4.fna&oh=00_AT8c7MK5UdMq3Kfwdb_f8y2d1KMuArV6sGafzxrEmDsuzw&oe=632C2C65">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./Style/commonStyles.css">
+    <link rel="stylesheet" href="./Style/createAccountPage.css">   
+</head>
+
+<body>
+    <main>
+        <div id="logo_div">
+            <img src="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png"
+                class="logo" alt="SparkAmerica 2022 Fit City Challenge ">
+        </div>
+        <img src="./SparkAmericaCityPageHeader.jpg" class="img" alt="SparkAmerica skyline">
+        <div class="container">
+            <form>
+                <div>
+                    <div id="welcome">Welcome to SparkAmerica !</div>
+                    <div>We need to get to know you and you'll be on your way in no time.</div>
+                    <div id="req">All fields required.</div>
+                    <div>
+                        <input id="mail" placeholder="Enter E-mail"><span class="req">*required</span>
+                    </div>
+                    <div class="input_div">
+                        <input id="password" type="password" class="input" placeholder="Enter Password"><span class="req">*required</span>
+                        <input id="re_password" type="password" class="input" placeholder="Enter Password Again"><span class="req">*required</span>
+                    </div>
+                    <div class="input_div">
+                        <input id="f_name" class="input" placeholder="First Name"><span class="req">*required</span>
+                        <input id="l_name" class="input" placeholder="Last Name"><span class="req">*required</span>
+                    </div>
+                    <div class="input_div">
+                        <input id="date" class="input" type="date" placeholder="Date of Birth (dd/mm/yyyy)"><span class="req">*required</span>
+                    </div>
+                    <div class="input_div">
+                        <input id="zipCode" class="input" placeholder="Zip Code"><span class="req">*required</span>
+                    </div>
+                    <div class="note">
+                        Create a username that will be displayed publicly on leaderboards. This can be fun and must be
+                        unique, so try adding some numbers to the end if your first choice is already taken.<br><br>
+                    </div>
+                    <div class="input_div">
+                        <input id="username" class="input" placeholder="Username"><span class="req">*required</span>
+                    </div>
+                    <div class="note">
+                        Select the city closest to you to participate in city challenges (optional).
+                    </div><br>
+                    <div id="city" class="input_div">
+                        <select name="Select City" class="input">
+                            <option value="">[Select City]</option>
+                            <option value="atlanta">Atlanta</option>
+                            <option value="boston">Boston</option>
+                            <option value="chicago">Chicago</option>
+                            <option value="denver">Denver</option>
+                            <option value="newyork">New York</option>
+                        </select><span class="req">*required</span>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>I have read and agree to PeopleOne's <a href=""
+                                target="_blank">Terms&nbsp;of&nbsp;Use.</a></label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label>I have read and agree to PeopleOne's <a href=""
+                                target="_blank">Privacy&nbsp;Use.</a></label>
+                    </div>
+
+                    <div id="btns">
+                        <a href="./registerPage.html">
+                            GO BACK
+                        </a>
+                        <input type="submit" value="CREATE ACCOUNT >">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="faq">
+            <a href="">Frequently Asked Questions</a>
+        </div>
+        <footer>
+            <div id="footer">
+                <span>
+                    © PeopleOne Health 2022
+                </span>
+                <a>Privacy Policy</a>
+                <a>Terms of Use</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
+<script>
+    let email = JSON.parse(localStorage.getItem("mail"));
+    document.getElementById("mail").value = email;
+    document.querySelector("form").onsubmit = function () {
+        event.preventDefault();
+        console.log("inside")
+        let email = document.getElementById("mail").value;
+        let pass = document.getElementById("password").value;
+        let f_name = document.getElementById("f_name").value;
+        let l_name = document.getElementById("l_name").value;
+        let date = document.getElementById("date").value;
+        let zip = document.getElementById("zipCode").value;
+        let username = document.getElementById("username").value;
+        let city = document.getElementById("city").value;
+        if (email === "" || pass === "" || f_name === "" || l_name === "" || date === "" || zip === "" || username === "" || city === "") {
+            let req = document.getElementsByClassName("req");
+            console.log(req)
+            for(let i=0; i<req.length; i++){
+                req[i].style.display = "block";
+            }
+        } else {
+            window.location.href = "./thankYouPage.html";
+        }
+    }
+</script>
