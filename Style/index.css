@@ -1,0 +1,142 @@
+/* Header Section Start */
+header{
+      width: 100%;
+      height: 150vh;
+      background-image: url('https://sparkamerica.com/wp-content/uploads/2020/12/HomeHeader1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+}
+
+header::after{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background-image: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0) 100%);
+}
+
+.line{
+      z-index: 4;
+      position: absolute;
+      bottom: 0;
+}
+
+.about{
+      width: 50%;
+      height: 350px;
+      position: absolute;
+      z-index: 4;
+      margin: 90px;
+      color: #0A0001;
+}
+
+.about>p{
+      width: 60%;
+      /* font-weight: normal; */
+      font-size: 30px;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 400;
+}
+
+.about>div>p{
+      line-height: 20px;
+}
+
+.underline{
+      width: 8%;
+      border-top: 3px solid #d7282f;
+      display: inline-block;
+      margin: 8px 0;
+}
+/* Header Section End */
+
+/* Body Section Start */
+/* Section One */
+.section_one{
+      width: 81%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 80px 0;
+}
+
+.section_one>div{
+      width: 49%;
+}
+
+.section_one>div>h2{
+      width: 55%;
+      font-weight: normal;
+      font-size: 30px;
+      text-align: left;
+      font-weight: normal;
+}
+
+.section_one>div>p{
+      line-height: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+}
+
+.btn{
+      text-align: center;
+      margin-top: 20px;
+}
+
+.btn>a>button{
+      background-color: #d7282f;
+      border: 1px solid #d7282f;
+      border-radius: 25px;
+      color: white;
+      padding: 12px 50px 12px 30px;
+      position: relative;
+      font-size: 14px;
+      cursor: pointer;
+}
+
+.btn>a>button:hover{
+      background-color: #FB2056;
+      border: 1px solid #FB2056;
+}
+
+.fas{
+      font-size: 18px;
+      position: absolute;
+      top: 12px;
+      padding-left: 5px;
+      padding-right: 20px;
+}
+
+.section_one>div>img{
+      width: 100%;
+}
+
+.underline2{
+      text-align: left;
+      width: 15%;
+      border-top: 3px solid #d7282f;
+      display: inline-block;
+      margin: 12px 0 8px 0;
+}
+
+
+/* Section Two */
+.background{
+      background-image: url('https://sparkamerica.com/wp-content/uploads/2020/11/HomePage_AboutUsSectionImg.jpg');
+      height: 90vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: fixed;
+      top: 20px;
+}
+
+.section_two{
+      height: 80vh;
+      width: 100%;
+      background: transparent;
+      background-color: rgba(255,255,255,0.46);
+      opacity: 0;
+}
