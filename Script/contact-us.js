@@ -1,0 +1,43 @@
+let form = document.querySelector("form");
+form.addEventListener("submit", Submit);
+function Submit() {
+  event.preventDefault();
+  let name = form.name.value;
+  let email = form.email.value;
+  console.log(name, email);
+  //This field is required.
+  //error if name or email invalid
+  if (name == "" && email == "") {
+    document.getElementById("war_name").innerText = "This field is required.";
+    document.getElementById("war_email").innerText =
+      "This field is required.";
+      document.getElementById("name").style.border="1px solid rgb(189, 68, 68)";
+      document.getElementById("email").style.border="1px solid rgb(189, 68, 68)";
+  }else if(name==""){
+    document.getElementById("name").style.border="1px solid rgb(189, 68, 68)";
+    document.getElementById("war_name").innerText = "This field is required.";
+
+    
+    document.getElementById("email").style.border="1px solid #e0e0e0";
+    document.getElementById("war_email").innerText ="";
+  }
+  else if(email==""){
+    // for chanege color frome name input tag
+    document.getElementById("name").style.border="1px solid #e0e0e0";
+    document.getElementById("war_name").innerText = "";
+
+
+
+    document.getElementById("email").style.border="1px solid rgb(189, 68, 68)";
+    document.getElementById("war_email").innerText =
+      "This field is required.";
+  }
+  else {
+    document.getElementById("form").innerText = "";
+    //
+    let tag = document.createElement("p");
+    tag.innerText =
+      "Thanks for contacting us! We will be in touch with you shortly.";
+    document.getElementById("form").append(tag);
+  }
+}
