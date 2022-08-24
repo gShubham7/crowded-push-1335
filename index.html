@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SPARKAMERICA - SparkAmerica</title>
+
+      <!-- Style Link Here -->
+      <link rel="stylesheet" href="Style/index.css">
+      <link rel="stylesheet" href="Style/footer.css">
+      <link rel="stylesheet" href="Style/navbar.css">
+
+      <!-- FavIcon Link Here -->
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+
+      <!-- Google Font Linked Here -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@100;400&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
+
+      <!-- Font Awesom Linked Here -->
+      <script src="https://kit.fontawesome.com/0abc29f6ea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <!-- Header Section Start -->
+      <header>
+            <!-- Navbar Section -->
+            <nav class="position_index">
+                  <!-- Import Navbar Data Append Here -->
+            </nav>
+
+            <div class="about">
+                  <h2>WHAT IS SPARKAMERICA?</h2>
+                  <div class="underline"></div>
+                  <div>
+                        <p>SparkAmerica is a movement.</p>
+
+                        <p>
+                              Launching from a platform that reached over 25 million users and helped countless people
+                              get
+                              healthier, SparkAmerica is led by an alliance of local and national partners that work
+                              together
+                              to “spark” America’s Fitness & Health, Leadership Development, and Community Engagement by
+                              helping one person, one organization, and one city at a time. SparkAmerica brings people,
+                              organizations, and cities together on a single tech platform to participate in our free
+                              and fun
+                              annual calendar of challenges that encourage individual achievement while driving
+                              participation
+                              in friendly competition. Covering areas from weight loss to financial health to getting
+                              and
+                              staying active, we provide an easy-to-use system for tracking progress. From personal
+                              stats to
+                              city leaderboards, we make it easy to build motivation and keep getting healthier.
+                        </p>
+                  </div>
+            </div>
+
+
+
+            <img class="line"
+                  src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/colorband-1536x11.jpg"
+                  alt="">
+      </header>
+      <!-- Header Section End -->
+
+      <!-- Body Section Start -->
+      <!-- Scetion One -->
+      <section class="section_one">
+            <div>
+                  <h2>SPARKCITIES</h2>
+                  <div class="underline2"></div>
+                  <p>
+                        Is your city a SparkCity? Great cities like Pittsburgh, Cleveland, Cincinnati, Akron, and Columbus are engaged in friendly and spirited competition to become healthier and more community focused.
+                  </p>
+                  <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/SparkCity_Columbus.jpg" alt="">
+                  
+                  <div class="btn">
+                        <a href="">
+                              <button>
+                                    JOIN THE MOVEMENT
+                                    <i class='fas fa-long-arrow-alt-right'></i>
+                              </button>
+                        </a>
+                  </div>
+            </div>
+
+            <div>
+                  <h2>SPARKPARTNERS</h2>
+                  <div class="underline2"></div>
+                  <p>
+                        At SparkAmerica we team with brands that promote health for everyone, like Vionic and RYU. We also have media partners in each of our cities that help us promote awareness and activate participation.
+                  </p>
+                  <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Partner_Vionic_Shoes.jpg" alt="">
+                  
+                  <div class="btn">
+                        <a href="">
+                              <button>
+                                    OUR PARTNER NETWORK 
+                                    <i class='fas fa-long-arrow-alt-right'></i>
+                              </button>
+                        </a>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Section Two -->
+      <div class="background"></div>
+      <section class="section_two">
+            
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+            <!-- Import Footer Data Append Here -->
+      </footer>
+</body>
+
+</html>
+
+<script type="module">
+
+      import { navbar, footer } from './Componets/navbar_footer.js';
+
+      document.querySelector("nav").innerHTML = navbar();
+      document.querySelector("footer").innerHTML = footer();
+</script>
