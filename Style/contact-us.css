@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#content_container {
+  margin: 0;
+  padding: 0px;
+}
+#content {
+  width: 85%;
+  margin: 0px auto;
+}
+.subheading_text a {
+  text-decoration: unset;
+}
+.separator {
+  height: 3px;
+  width: 160px;
+  background-color: #d7282f;
+  display: inline-block;
+}
+#heading {
+  font-weight: lighter;
+  font-size: 30px;
+}
+.separator_parent {
+  margin-top: -20px;
+}
+#content p {
+  line-height: 25px;
+  color: #333232;
+  font-weight: 500;
+}
+#reach_out {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-around;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+#form_div,
+#contact_details {
+  padding: 30px;
+}
+#contact_details {
+  padding-left: 0px;
+}
+#contact_details a {
+  text-decoration: unset;
+}
+#checkbox li {
+  list-style: none;
+  margin: 5px -45px;
+}
+#checkbox > label {
+  font-weight: bolder;
+  font-size: 16px;
+}
+#form > input {
+  padding: 15px 20px;
+  border: 1px solid #e0e0e0;
+  background-color: #f3f3f3d7;
+}
+#reach_out h3 {
+  font-size: 24px;
+  font-weight: 100;
+}
+input::placeholder {
+  font-size: 16px;
+}
+button[type="submit"] {
+  background-color: #dd292f;
+  width: 200px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+button[type="submit"]:hover {
+  background-color: #ff3550;
+}
+#war_name,
+#war_email {
+  color: rgb(189, 68, 68);
+  margin-top: -15px;
+  font-size: 15px;
+}
