@@ -1,0 +1,106 @@
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #0a0001;
+    font-size: 30px;
+    line-height: 39px;
+    font-style: normal;
+}#sep1,#sep2,#sep3{
+    border:2px solid red;
+    width: 15%;
+}
+.p1{
+    font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+    color: #222222;             
+    font-size: 16px;
+    line-height: 24px;
+}
+body{
+    width: 78%;
+    margin: auto;
+}
+#image1{
+    width: 80%;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #0a0001;
+    font-size: 20px;
+    line-height: 28px;
+}
+.p2,ul{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #222222;
+    font-size: 15px;
+    line-height: 22px;
+}
+#appWeb,#appMob ,#game{
+
+margin-top: 30px;
+display: flex;
+}
+#description{
+    width: 100%;
+}
+#sep2{
+    margin-top: 50px;
+}
+#description2 p:nth-child(3){
+    margin-top: 30px;
+}
+#description2{
+    position: absolute;
+    width: 44%;
+    
+} 
+#description2~div{
+    
+    margin-left: 70%;
+}
+#sep3{
+    border-color: #00953b;
+}
+#description3{
+    width: 60%;
+    margin-left: 19%;
+    
+}
+#image3{
+    margin-left: 10%;
+}
+.bhuro{
+    color: rgb(84, 137, 252);
+}
+
+@media all and (max-width:780px ){
+    #appWeb,#appMob,#game{
+        display: block;
+    }
+    body{
+        width: 92%;
+        
+    }
+    h1{
+       text-align: center;
+    }
+    #sep1{
+        margin: auto;
+    }
+    #description2{
+        position: relative;
+        width: 105%;
+        
+    } 
+    #image1,#image3{
+        position: relative;
+        left: 10%;
+    }
+    #image2{
+    position: relative;
+    right: 165%;
+    }
+}
+    
