@@ -1,0 +1,116 @@
+form {
+    width: 45%;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+#req {
+    color: #28a745;
+    font-size: 80%;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.req {
+    color: red;
+    font-size: 80%;
+    font-weight: 400;
+    display: none;
+}
+
+#mail {
+    width: 48%;
+}
+
+.input {
+    width: 48%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #afcbe7;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    margin: 9px 0;
+}
+
+.input_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note {
+    margin-bottom: -30px;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+label>a {
+    text-decoration: none;
+}
+
+.img {
+    width: auto;
+    position: absolute;
+    z-index: -1;
+    zoom: 1;
+    height: 130vmax;
+}
+
+@media all and (min-width:769px) and (max-width:991px) {
+    #mail {
+        width: 100%;
+    }
+
+    form>div {
+        display: grid;
+        grid-template-columns: 1, 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input_div {
+        display: block;
+    }
+}
+
+@media all and (min-width:681px) and (max-width:768px) {
+    .logo {
+        width: 70%;
+    }
+
+    form {
+        width: auto;
+        padding: 1.5rem;
+    }
+
+    #mail {
+        width: 100%;
+    }
+
+    form>div {
+        display: grid;
+        grid-template-columns: 1, 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .input_div {
+        display: block;
+    }
+}
