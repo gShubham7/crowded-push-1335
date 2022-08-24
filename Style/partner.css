@@ -1,0 +1,126 @@
+*{
+    color:#0a0001;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+
+    
+}
+h2{
+    font-family: 'Roboto',sans-serif;
+    font-size: 30px;
+    font-weight: 50;
+}
+#line{
+    border:1px solid #D7282F;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#partner_container{
+    width: 80%;
+    margin: auto;
+    line-height: 25px;
+}
+#line2{
+    border:1.5px solid #D7282F;
+    width: 200px;
+    background-color: #D7282F;
+    margin-bottom: 20px;
+}
+
+span{
+    color: blue;
+}
+
+#vionic{
+    border:1px solid black;
+    margin-top: 50px;
+}
+#parent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    padding: 15px;
+}
+#vionic_img{
+    width: 100%;
+    margin-top: 24%;
+}
+
+button{
+    padding: 20px 40px;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #D7282F;
+    color: white;
+    border: none;
+    transition: all ease 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+button:hover{
+   background-color: #5b6267;
+}
+
+.vionic_shoes{
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-style: inherit;
+
+}
+.vionic_sponsor{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-style: inherit;
+
+    
+}
+#btn_oswald{
+    padding: 20px 30px;
+}
+#Strategic_Partner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin-top: 10px;
+}
+#Strategic_Partner div{
+    border: 1px solid black;
+    padding: 15px;
+}
+#Strategic_Partner div>img{
+width: 100%;
+}
+
+@media all and (min-width:360px) and (max-width:768px){
+  
+    #parent{
+        padding: 15px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px
+    }
+    #parent div{
+        padding: 10px;
+    }
+    #vp{
+        width:87%;
+    }
+    #parent div>img{
+        width: 90%;
+    }
+    #Strategic_Partner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+        margin-top: 10px;
+    }
+}

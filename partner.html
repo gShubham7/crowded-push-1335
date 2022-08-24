@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTNERS - SparkAmerica</title>
+    <link rel="stylesheet" href="./Style/partner.css">
+    <link rel="stylesheet" href="./Style/navbar.css">
+</head>
+<body>
+      <nav>
+
+      </nav>
+      <div id="line"></div>
+      <div id="partner_container">
+         <h2>OUR PARTNERS</h2>
+         <div id="line2"></div>
+         <p>We are extremely grateful to have amazing partners in building SparkAmerica, they help make all 
+            we do possible. From providing prizes to social media awareness to television time, they keep the spark
+             ignited across our cities and communities. Our partners collectively work with thousands of companies 
+             including HR leaders and exec teams and millions
+             of TV and digital viewers. If you're interested in partnering with us please <span id="email">contact us</span> via email.</p>
+             <div id="vionic">
+                  <div id="parent">
+                       <div>
+                        <img id="vionic_img" src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/VioinicLG-01.png" alt="">
+                       </div>
+                       <div id="vp">
+                        <h3 class="vionic_shoes">VIONIC SHOES</h3>
+                        <p class="vionic_sponsor">Presenting Sponsor</p>
+                        <p>Whether you’re shopping for men’s shoes or women’s shoes, comfortable stylish shoes that keep up
+                             with the current style trends should be a priority. What if you could have all that, with supportive
+                              arch support technology to relieve aching feet and pain from plantar fasciitis or heel pain? At Vionic,
+                               our shoes for women and men provide arch support technology in the most up to date styles. Made with high
+                                quality and breathable materials such as durable leather and soft suede, our footwear is created for all-day
+                                 wear so that your feet can be comfortable no matter where you are going. 
+                                  Walk in comfort when you slip into a comfortable pair of shoes with arch support from Vionic.</p>
+                       </div>
+                  </div>
+                 <center>
+                    <button id="Vionic_btn">VISIT VIONIC SHOES</button>
+                 </center> 
+             </div>
+             <div id="Strategic_Partner">
+               <div>
+                    <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Babb.png" alt="">
+                    <h3 class="vionic_shoes">BABB, INC.</h3>
+                    <p class="vionic_sponsor">Strategic Partner</p>
+                    <p>Since 1929, Babb, Inc. has established a solid reputation 
+                         as a leading, independent insurance broker, third party administrator, 
+                         and consulting firm. With a unique perspective, extensive experience,
+                          and innovative business strategies, we deliver our clients the best services and options possible.
+                         </p>
+                         <center>
+                              <button>VISIT BABB</button>
+                         </center>
+               </div>
+               <div>
+                    <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Oswald.png" alt="">
+                    <h3 class="vionic_shoes">OSWALD COMPANIES</h3>
+                    <p class="vionic_sponsor">Strategic Partner</p>
+                    <p>Founded in 1893, Cleveland-based, and employee-owned, Oswald is one of the nation’s 
+                         largest independent insurance brokerage and risk management firms. As a proud Partner 
+                         of <span id="oswald">Assurex Global</span>, the world’s largest association
+                          of privately held insurance brokers, our risk management professionals 
+                          service and support the needs of our clients worldwide.</p>
+                        <center>
+                         <button id="btn_oswald">VISIT OSWALD COMPANIES</button>
+                        </center> 
+               </div>
+               <div>
+                    <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2021/04/RCMD-1536x804.jpeg" alt="">
+                    <h3 class="vionic_shoes">RCM&D</h3>
+                    <p class="vionic_sponsor">Strategic Partner</p>
+                    <p>RCM&D is ranked among the top independent insurance advisory firms in the United States.
+                          Founded in 1885, we leverage our 135+ years of experience and strong local, national
+                           and global reach to meet clients business objectives.</p>
+                       <center>
+                         <button>VISIT RCM&D</button>
+                       </center>  
+               </div>
+              
+             </div>
+         <div id="partners">
+          <img src="" alt="">
+         </div>
+      </div>
+</body>
+</html>
+
+<script type="module">
+   import {navbar,footer} from './Componets/navbar_footer.js';
+
+   document.querySelector("nav").innerHTML = navbar();
+
+ 
+</script>
+<script>
+ document.querySelector("#oswald").addEventListener("click",oswald);
+   function oswald(){
+     window.location.href = "https://www.oswaldcompanies.com/about-us/assurex-global/"
+   }
+
+   document.querySelector("#email").addEventListener("click",email);
+   function email(){
+     window.location.href = "mailto:amanda.kanaga@spark360.com"
+   }
+</script>
