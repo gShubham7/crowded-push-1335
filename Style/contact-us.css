@@ -6,17 +6,8 @@ body {
   margin: 0;
   padding: 0;
 }
-
-#content_container {
-  margin: 0;
-  padding: 0px;
-}
-#content {
-  width: 85%;
-  margin: 0px auto;
-}
-.subheading_text a {
-  text-decoration: unset;
+.separator_parent {
+  margin-top: -20px;
 }
 .separator {
   height: 3px;
@@ -24,13 +15,27 @@ body {
   background-color: #d7282f;
   display: inline-block;
 }
+#content_container {
+  margin: 0;
+  padding: 0px;
+  margin-top: 50px;
+}
+#content {
+  width: 85%;
+  margin: 0px auto;
+}
+#heading{
+  margin-bottom: 25px;
+}
+.subheading_text a {
+  text-decoration: unset;
+}
+
 #heading {
   font-weight: lighter;
   font-size: 30px;
 }
-.separator_parent {
-  margin-top: -20px;
-}
+
 #content p {
   line-height: 25px;
   color: #333232;
@@ -41,6 +46,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-content: space-around;
+  margin-bottom: 100px;
 }
 #form {
   display: flex;
@@ -60,7 +66,7 @@ body {
 }
 #checkbox li {
   list-style: none;
-  margin: 5px -45px;
+  margin-top: 5px;
 }
 #checkbox > label {
   font-weight: bolder;
@@ -79,7 +85,7 @@ input::placeholder {
   font-size: 16px;
 }
 button[type="submit"] {
-  background-color: #dd292f;
+  background-color: #d7282f;
   width: 200px;
   color: white;
   border: none;
@@ -88,7 +94,7 @@ button[type="submit"] {
   font-size: 15px;
 }
 button[type="submit"]:hover {
-  background-color: #ff3550;
+  background-color: #FB2056;
 }
 #war_name,
 #war_email {

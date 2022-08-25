@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Style/contact-us.css">
+    <link rel="stylesheet" href="Style/contact-us.css" />
+    <link rel="stylesheet" href="Style/footer.css" />
+    <link rel="stylesheet" href="Style/navbar.css" />
   </head>
   <body>
-    <div id="navbar"></div>
+    <nav class="position_index">
+      <!-- Import Navbar Data Append Here -->
+    </nav>
     <div id="content_container">
       <div id="content">
         <!-- Ready join content -->
@@ -88,8 +92,15 @@
         </div>
       </div>
     </div>
-    <div id="footer"></div>
+    <footer>
+      <!-- Import Footer Data Append Here -->
+    </footer>
   </body>
 </html>
 <script src="script/contact-us.js"></script>
+<script type="module">
+  import { navbar, footer } from "./Componets/navbar_footer.js";
 
+  document.querySelector("nav").innerHTML = navbar();
+  document.querySelector("footer").innerHTML = footer();
+</script>
