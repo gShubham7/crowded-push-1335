@@ -12,21 +12,24 @@ h2{
 }
 #line{
     border:1px solid #D7282F;
-    width: 60%;
+    width: 65%;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 #partner_container{
     width: 80%;
     margin: auto;
     line-height: 25px;
+    margin-top: 30px;
 }
 #line2{
     border:1.5px solid #D7282F;
     width: 200px;
     background-color: #D7282F;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 span{
@@ -99,6 +102,85 @@ button:hover{
 width: 100%;
 }
 
+/* -----------------------partner part css--------------------- */
+
+#partners{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom: 100px;
+
+}
+#partners div{
+    padding: 15px;
+    border: 1px solid black;
+    padding-top: 30px;
+    line-height: 20px;
+}
+#partners div>center>img{
+    display: inline;
+    height: auto;
+    max-width: 100%;
+}
+button{
+    padding: 20px 40px;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #D7282F;
+    color: white;
+    border: none;
+    transition: all ease 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+button:hover{
+    background-color: #5b6267;
+ }
+    #ABC6{
+        margin-top: 42px;
+        padding-bottom: 40px;
+    }
+    #ABC5{
+        margin-top: 17px;
+    }
+
+    #PH{
+        margin-top: 60px;
+        padding-bottom: 55px;
+    }
+
+    #WCPO{
+        padding-top:45px;
+    }
+  #PH_btn{
+    margin-top: 40px;
+  }
+    #WCPO_btn{
+        margin-top: 60px;
+    }
+    #ABC6_btn{
+        margin-top: 37px;
+    }
+    #MWTM
+    h2{
+        font-weight: 700;
+    }
+
+    #partners div .parentline{
+    border: none;
+    border-top: 3px solid #d7282f;
+    width: 15%;
+    margin-top: 15px;
+    }
+    #partners div>h2{
+        margin-top: 30px;
+    }
+
 @media all and (min-width:360px) and (max-width:768px){
   
     #parent{
@@ -123,4 +205,16 @@ width: 100%;
         gap:10px;
         margin-top: 10px;
     }
+    #partners{
+        display:grid;
+        grid-template-columns: repeat(1,auto);
+      }
+      #partners div{
+        padding: 30px;
+        width: 100%;
+        margin: auto;
+      }
+      #partners div .parentline{
+        margin-left: 0px;
+      }
 }
