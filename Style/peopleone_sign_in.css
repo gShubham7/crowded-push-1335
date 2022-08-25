@@ -1,0 +1,113 @@
+body{
+    width: 90%;
+    margin: auto;
+
+}
+#container{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   width: 52%;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px ;
+    line-height: 23px;
+    color:#333333 ;
+}
+#signIn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    border-right:1px solid #e5e5e5;
+    padding-right: 40px;
+}
+#signUp{
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    margin-right: 20px;
+}
+#logo{
+
+    width: 22em;
+}
+body>div:nth-child(1){
+    margin-top: 50px;
+    text-align: center;
+} 
+#signUp img{
+width: 17%;
+margin-top: 10px;
+margin-left: 10%;
+}
+#signUp>form>div{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    width: 250px;
+
+}
+#email,#password,#emailId{
+   font-size: 30px;
+   width: 250px;
+   background-color: #e5e5e5;
+   border-radius: 5px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   border: 0px;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+#signUp div>p{
+    font-size: 15px;
+    line-height: 35px;
+}
+#forgot{
+    color: #006da8;
+}
+button{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: 
+    #006da8;
+    color: #fffaf7;
+    border: 0px;
+    width: 250px;
+    font-size: 16px;
+    line-height: 24px;
+}
+button:hover{
+    background-color: #1e5f83;
+    cursor:pointer;
+}
+h3{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+span{
+    color: #006da8;
+}
+h5{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+#bottom{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+}
+#bottom>img{
+    width: 25px;
+    height: 25px;
+
+
+}
