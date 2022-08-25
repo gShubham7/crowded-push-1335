@@ -12,10 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./Style/commonStyles.css">
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="./Style/commonStyles.css">    
 </head>
 <body>
     <main>
@@ -42,7 +39,7 @@
                         <img src="https://www.a2hosting.com/blog/content/uploads/2017/02/image01-1.png">
                     </div>
                     <div id="btns">
-                        <a href="">
+                        <a href="./index.html">
                             GO BACK
                         </a>
                         <input type="submit" value="CONTINUE >">
@@ -52,7 +49,7 @@
         </div>
 
         <div id="faq">
-            <a href="">Frequently Asked Questions</a>
+            <a href="./FAQPage.html">Frequently Asked Questions</a>
         </div>
         <footer>
             <div id="footer">
@@ -69,8 +66,7 @@
 </html>
 <script>
     document.querySelector("form").onsubmit = function () {
-        event.preventDefault();
-        console.log("inside")
+        event.preventDefault();        
         let email = document.getElementById("mail").value;
         if (email === "") {
             document.getElementById("err_msg").style.display = "block";

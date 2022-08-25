@@ -35,7 +35,7 @@ const navbar = () => {
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="./registerPage.html">
                                     REGISTER
                               </a>
                         </li>

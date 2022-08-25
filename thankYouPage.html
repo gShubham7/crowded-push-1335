@@ -14,8 +14,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./Style/commonStyles.css">
-    <link rel="stylesheet" href="./Style/thankYouPage.css">    
+    <link rel="stylesheet" href="./Style/thankYouPage.css">
 </head>
+
 <body>
     <main>
         <div id="logo_div">
@@ -26,7 +27,7 @@
         <div class="container">
             <form>
                 <div>
-                    <div id="thankYou">Thank you, <span></span>!</div>
+                    <div id="thankYou">Thank you, <span></span> !</div>
                     <div class="note">
                         We've sent you an email containing a verification link.
                     </div>
@@ -65,4 +66,6 @@
 
 </html>
 <script>
+    let user = JSON.parse(localStorage.getItem("user")) || [];
+    document.querySelector("#thankYou>span").innerText = user[user.length - 1].f_name;
 </script>
