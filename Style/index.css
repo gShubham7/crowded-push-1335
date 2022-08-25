@@ -1,11 +1,13 @@
 /* Header Section Start */
 header{
       width: 100%;
-      height: 150vh;
+      height: 125vh;
       background-image: url('https://sparkamerica.com/wp-content/uploads/2020/12/HomeHeader1.jpg');
+      background-position: 10%;
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
+      
 }
 
 header::after{
@@ -25,7 +27,7 @@ header::after{
 }
 
 .about{
-      width: 50%;
+      width: 52%;
       height: 350px;
       position: absolute;
       z-index: 4;
@@ -33,9 +35,13 @@ header::after{
       color: #0A0001;
 }
 
+.about>h2{
+      font-size: 30px;
+      font-weight: 400;
+}
+
 .about>p{
-      width: 60%;
-      /* font-weight: normal; */
+      width: 68%;
       font-size: 30px;
       font-family: 'Roboto',sans-serif;
       font-weight: 400;
@@ -53,7 +59,9 @@ header::after{
 }
 /* Header Section End */
 
+
 /* Body Section Start */
+
 /* Section One */
 .section_one{
       width: 81%;
@@ -67,18 +75,19 @@ header::after{
       width: 49%;
 }
 
-.section_one>div>h2{
+.heading2{
       width: 55%;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 30px;
       text-align: left;
       font-weight: normal;
 }
 
-.section_one>div>p{
+.para2{
       line-height: 20px;
       margin-bottom: 20px;
       text-align: left;
+      font-size: 0.9rem;
 }
 
 .btn{
@@ -124,19 +133,113 @@ header::after{
 
 
 /* Section Two */
-.background{
+.section_two{
       background-image: url('https://sparkamerica.com/wp-content/uploads/2020/11/HomePage_AboutUsSectionImg.jpg');
-      height: 90vh;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
-      position: fixed;
-      top: 20px;
+      background-attachment: fixed;
+      background-position: 5%;
+      padding: 150px 120px;
 }
 
-.section_two{
-      height: 80vh;
+.underline3{
+      text-align: left;
+      width: 15%;
+      border-top: 3px solid blue;
+      display: inline-block;
+      margin: 12px 0 8px 0;
+}
+
+
+/* Section Three */
+.section_three{
+      width: 85%;
+      height: auto;
+      margin: auto;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 120px 0;
+}
+
+.section_three>:first-child{
+      width: 36%;
+}
+
+.section_three h2{
       width: 100%;
-      background: transparent;
-      background-color: rgba(255,255,255,0.46);
-      opacity: 0;
+      font-weight: normal;
+      font-size: 30px;
+      text-align: left;
+      font-weight: normal;
+}
+
+.underline4{
+      text-align: left;
+      width: 13%;
+      border-top: 3px solid #d7282f;
+      display: inline-block;
+      margin: 12px 0 8px 0;
+}
+
+.section_three p{
+      line-height: 20px;
+      text-align: left;
+      font-size: 0.9rem;
+}
+
+.section_three>div>p+p{
+      margin-bottom: 20px;
+}
+
+.section_three>div>div{
+      text-align: center;
+}
+
+.section_three button{
+      background-color: #d7282f;
+      border: 1px solid #d7282f;
+      border-radius: 25px;
+      color: white;
+      padding: 12px 30px;
+      font-size: 14px;
+      cursor: pointer;
+}
+
+.section_three button:hover{
+      background-color: #FB2056;
+      border: 1px solid #FB2056; 
+}
+
+.section_three>:last-child{
+      width: 61.5%;
+      height: 95vh;
+      display: grid;
+      gap: 20px;
+      grid-template-areas:
+      "box1 box2"
+      "box3 box2"
+      "box3 box4"
+      ;
+}
+
+.section_three>:last-child>div>img{
+      width: 100%;
+      height: 100%;
+}
+
+.box1{
+      grid-area: box1;
+}
+
+.box2{
+      grid-area: box2;
+}
+
+.box3{
+      grid-area: box3;
+}
+
+.box4{
+      grid-area: box4;
 }
