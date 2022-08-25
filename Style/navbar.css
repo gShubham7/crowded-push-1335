@@ -25,12 +25,14 @@
   nav{
       width: 100%;
       padding-top: 5px;
+      position: relative;
+      z-index: 4;
   }
   
   /* Logo Section */
   #logo{
       width: 100%;
-      padding: 10px 0px;
+      padding: 9.7px 0px;
       text-align: center;
       width: 515px;
       margin: auto;
@@ -38,7 +40,6 @@
   
   #logo>a>img{
       width: 91%;
-      margin-bottom: 20px;
   }
   
   #logo>img:visited{
