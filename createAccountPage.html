@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./Style/commonStyles.css">
-    <link rel="stylesheet" href="./Style/createAccountPage.css">   
+    <link rel="stylesheet" href="./Style/createAccountPage.css">
 </head>
 
 <body>
@@ -34,15 +34,18 @@
                         <input id="mail" placeholder="Enter E-mail"><span class="req">*required</span>
                     </div>
                     <div class="input_div">
-                        <input id="password" type="password" class="input" placeholder="Enter Password"><span class="req">*required</span>
-                        <input id="re_password" type="password" class="input" placeholder="Enter Password Again"><span class="req">*required</span>
+                        <input id="password" type="password" class="input" placeholder="Enter Password"><span
+                            class="req">*required</span>
+                        <input id="re_password" type="password" class="input" placeholder="Enter Password Again"><span
+                            class="req">*required</span>
                     </div>
                     <div class="input_div">
                         <input id="f_name" class="input" placeholder="First Name"><span class="req">*required</span>
                         <input id="l_name" class="input" placeholder="Last Name"><span class="req">*required</span>
                     </div>
                     <div class="input_div">
-                        <input id="date" class="input" type="date" placeholder="Date of Birth (dd/mm/yyyy)"><span class="req">*required</span>
+                        <input id="date" class="input" type="date" placeholder="Date of Birth (dd/mm/yyyy)"><span
+                            class="req">*required</span>
                     </div>
                     <div class="input_div">
                         <input id="zipCode" class="input" placeholder="Zip Code"><span class="req">*required</span>
@@ -57,8 +60,8 @@
                     <div class="note">
                         Select the city closest to you to participate in city challenges (optional).
                     </div><br>
-                    <div id="city" class="input_div">
-                        <select name="Select City" class="input">
+                    <div class="input_div">
+                        <select id="city" name="Select City" class="input">
                             <option value="">[Select City]</option>
                             <option value="atlanta">Atlanta</option>
                             <option value="boston">Boston</option>
@@ -88,7 +91,7 @@
             </form>
         </div>
         <div id="faq">
-            <a href="">Frequently Asked Questions</a>
+            <a href="./FAQPage.html">Frequently Asked Questions</a>
         </div>
         <footer>
             <div id="footer">
@@ -103,28 +106,4 @@
 </body>
 
 </html>
-<script>
-    let email = JSON.parse(localStorage.getItem("mail"));
-    document.getElementById("mail").value = email;
-    document.querySelector("form").onsubmit = function () {
-        event.preventDefault();
-        console.log("inside")
-        let email = document.getElementById("mail").value;
-        let pass = document.getElementById("password").value;
-        let f_name = document.getElementById("f_name").value;
-        let l_name = document.getElementById("l_name").value;
-        let date = document.getElementById("date").value;
-        let zip = document.getElementById("zipCode").value;
-        let username = document.getElementById("username").value;
-        let city = document.getElementById("city").value;
-        if (email === "" || pass === "" || f_name === "" || l_name === "" || date === "" || zip === "" || username === "" || city === "") {
-            let req = document.getElementsByClassName("req");
-            console.log(req)
-            for(let i=0; i<req.length; i++){
-                req[i].style.display = "block";
-            }
-        } else {
-            window.location.href = "./thankYouPage.html";
-        }
-    }
-</script>
+<script src="./Script/createAccountPage.js"></script>
