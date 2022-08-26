@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmericaCityPageHeader.jpg");
+    background-size: cover;
+}
+
 #logo_div {
     text-align: center;
     margin: 2rem 0;
@@ -7,15 +12,6 @@
     max-width: 40rem;
     max-height: 10rem;
     margin: auto;
-}
-
-.img {
-    position: absolute;
-    top: -150px;
-    width: 175%;
-    left: 0;
-    z-index: -1;
-    height: 100vmax;
 }
 
 body::-webkit-scrollbar {
@@ -52,6 +48,10 @@ label {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     font-family: 'Roboto', sans-serif;
     margin: 9px 0;
+}
+
+#mail:focus{
+    outline: 3px solid #afcbe7;    
 }
 
 .note {
@@ -141,7 +141,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-@media all and (min-width:320px) and (max-width:680px) {
+@media all and (min-width:420px) and (max-width:768px) {
     .logo {
         width: 80%;
     }

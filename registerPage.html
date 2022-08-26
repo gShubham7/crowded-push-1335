@@ -6,38 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SparkAmerica: Get Started</title>
-    <link rel="icon" type="image/x-icon" href="https://scontent.fpnq7-4.fna.fbcdn.net/v/t1.6435-9/131324587_104016418251178_3179768484877312106_n.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mZK9Ey-vE-MAX8XdART&_nc_ht=scontent.fpnq7-4.fna&oh=00_AT8c7MK5UdMq3Kfwdb_f8y2d1KMuArV6sGafzxrEmDsuzw&oe=632C2C65">
+    <link rel="icon" href="SPARK-America.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./Style/commonStyles.css">    
+    <link rel="stylesheet" href="./Style/commonStyles.css">
+    <link rel="stylesheet" href="./Style/registerPage.css">    
 </head>
+
 <body>
     <main>
         <div id="logo_div">
             <img src="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png"
                 class="logo" alt="SparkAmerica 2022 Fit City Challenge ">
         </div>
-        <img src="./SparkAmericaCityPageHeader.jpg" class="img" alt="SparkAmerica skyline">
+        <!-- <img src="./SparkAmericaCityPageHeader.jpg" class="img" alt="SparkAmerica skyline"> -->
         <div class="container">
             <form>
                 <div>
                     <label for="EmailAddress">Please enter your email address to
                         get started:</label>
                     <div>
-                        <input id="mail">
+                        <input id="mail" type="email">
                     </div>
                     <div id="err_msg">The Email Address field is required.</div>
                     <div class="note">
                         Note: If your organization or company already uses PeopleOne, please enter your company
                         email address above.<br><br>
                     </div>
-                    <div id="captcha">
+                    <div class="captcha">
+                        <div class="spinner">
+                            <label>
+                                <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                                <span class="checkmark"><span>&nbsp;</span></span>
+                            </label>
+                        </div>
+                        <div class="text">
+                            I'm not a robot
+                        </div>
+                        <div class="captcha_logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/2048px-RecaptchaLogo.svg.png" />
+                            <p>Privacy - Terms</p>
+                        </div>
+                    </div>
+                    <!-- <div id="captcha">
                         <input id="captcha_checkbox" type="checkbox">
                         <img src="https://www.a2hosting.com/blog/content/uploads/2017/02/image01-1.png">
-                    </div>
+                    </div> -->
                     <div id="btns">
                         <a href="./index.html">
                             GO BACK
@@ -66,7 +83,7 @@
 </html>
 <script>
     document.querySelector("form").onsubmit = function () {
-        event.preventDefault();        
+        event.preventDefault();
         let email = document.getElementById("mail").value;
         if (email === "") {
             document.getElementById("err_msg").style.display = "block";
