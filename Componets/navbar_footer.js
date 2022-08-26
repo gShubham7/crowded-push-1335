@@ -105,11 +105,9 @@ const footer = () =>{
       </div>
 </div>
 
- <center>
       <p id="footer_tag">
             ® 2020 PeopleOne Health. All Rights Reserved.
-            </p>
- </center>`
+            </p>`
 }
 
 

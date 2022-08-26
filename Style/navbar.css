@@ -40,6 +40,7 @@
   
   #logo>a>img{
       width: 91%;
+      margin-bottom: 20px;
   }
   
   #logo>img:visited{
@@ -51,7 +52,13 @@
       text-align: center;
       margin-top: -5px;
   }
-  
+  #line{
+    border:1px solid #D7282F;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
   #lists{
       width: 61.5%;
       display: flex;
@@ -138,7 +145,7 @@
       border-radius: 5px;
   }
   
-  @media  all and (min-width:360px) and (max-width:866px){
+  @media (min-width:200px) and (max-width:481px){
       nav{
           display: none;
       }
@@ -149,18 +156,47 @@
       #line{
             display: none;
       }
-  }
-  
-  @media  all and (min-width:867px) and (max-width:1500px){
-      nav{
-          display: block;
+      .list_of_links{
+        text-align: left;
       }
-  
-      .nav{
+      #menu_icon,#menu_icon_delete{
+        margin-right: 30px;
+    }
+  }
+  @media (min-width:482px) and (max-width:768px){
+    nav{
+        display: none;
+    }
+    #menu_icon,#menu_icon_delete{
+        margin-right: 60px;
+    }
+
+    .navbar_icon{
+        display: block;
+    }
+    #line{
           display: none;
-      }
-     
+    }
+    .list_of_links{
+      text-align: left;
+      margin-left: 60px;
+    }
   }
+  
+  
+  @media (min-width:769px) and (max-width:1500px){
+    nav{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+    .list_of_links{
+        display: none;
+    }
+   
+}
   
   
   
