@@ -1,0 +1,134 @@
+body{
+    width: 90vw;
+    margin: auto;
+}
+
+#logo{
+text-align: center;
+margin-top: 50px;
+}
+#logo>img{
+    width: 35%;
+}
+#container{
+    width: 35%;
+    margin: auto;
+}
+#mainheader{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}
+#subheader{
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#subheader~p{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+#mail,#phone,#hours,#faqs{
+display: flex;
+align-items: center;
+gap: 1rem;
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+}
+#mail>img,#phone>img,#hours>img,#faqs>img{
+    width: 2rem;
+    height: 2rem;
+}
+.stitle{
+    font-size: 15px;
+    line-height: 15px;
+    color: rgb(28, 152, 209);
+}
+#faqs~h3{
+    cursor: pointer;
+    color:  rgb(28, 152, 209);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+#exc{
+    color: rgb(179, 174, 171);
+    font-size: 15px;
+}
+@media all and (max-width:999px) and (min-width:779px) {
+    #container{
+        width: 70%;
+    }
+    #mainheader{
+        font-size: 15px;
+    }
+    #subheader{
+        width: 100%;
+        font-size: 17px;
+    }
+    #subheader~p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .stitle{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    #faqs~h3{
+        font-size: 12px;
+    }    
+}
+@media all and (max-width:779px) and (min-width:579px){
+    #container{
+    width: 65%;
+    }
+    #subheader{
+        width: 90%;
+    }
+    #subheader~p{
+        width: 95%;
+    }
+    #logo>img{
+        width: 60%;
+    }
+    #mainheader{
+        font-size: 20px;
+    }
+    .stitle{
+        font-size: 12px;
+    }
+    #faqs~h3{
+        font-size: 15px;
+        font-weight: 300;
+    }   
+}
+@media all and (max-width:578px){
+    #container{
+        width: 100%;
+    }
+    #logo>img{
+        width: 50%;
+    }
+    #subheader{
+        width: 90%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    #subheader~p{
+        width: 100%;
+    }
+    .stitle{
+        font-size: 12px;
+    }
+    .subTitle{
+        font-size: 17px;
+    }
+    #faqs~h3{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #mainheader{
+        font-size: 20px;
+    }
+}

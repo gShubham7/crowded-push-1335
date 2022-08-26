@@ -1,0 +1,153 @@
+
+#maincontainer{
+    width: 90vw;
+    margin: auto;
+}
+#container{
+    width: 45%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+#logo{
+    text-align: center;
+    margin-top: 100px;
+}
+#logo>img{
+    margin: auto;
+    width: 30%;
+}
+#mainheader{
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529;
+}
+#subheader{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6c757d;
+}
+button:hover{
+background-color: #0e5880;
+}
+.par{
+    width: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #212529;
+}
+#con{
+    font-size: 16px;
+}
+.btn{
+border-radius: 25px;
+padding: 15px 70px;
+font-weight: 600;
+font-size: 16px;
+color: #fff;
+background-color: 
+#006da8;
+border: 0px;
+cursor: pointer;
+}
+#alter{
+    padding: 15px 25px;
+}
+#net{
+    padding: 15px 45px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+.sep::after,.sep::before{
+    content:'';
+    height: 2px;
+    position: relative;
+}
+@media all and (max-width:987px) and (min-width:775px){
+    .box{
+        display: block;
+    }
+    #mainheader{
+    font-size: 13px;
+    }
+    #subheader{
+        font-size: 10px;
+        }
+    .btn{
+    width: 100%;
+    }
+    #container{
+        width: 50%;
+    }
+    .par{
+        width: 100%;
+        font-size: 11px;
+    }
+    #con{
+        font-size: 12px;
+    }
+}
+@media all and (max-width:774px) and (min-width:579px){
+    #logo>img{
+        width: 50%;
+    }
+    .box{
+        display: block;
+    }
+    #mainheader{
+    font-size: 17px;
+    }
+    #subheader{
+        font-size: 15px;
+        }
+    .btn{
+    width: 100%;
+    }
+    #container{
+        width: 50%;
+    }
+    .par{
+        width: 100%;
+        font-size: 13px;
+    }
+    #con{
+        font-size: 13px;
+    }
+}
+@media all and (max-width:578px) {
+    #maincontainer{
+        width:100%;
+    }
+    #logo>img{
+        width:50%;
+    }
+    .box{
+        display: block;
+        width: 90%;
+    }
+    #mainheader{
+    font-size: 17px;
+    }
+    #subheader{
+        font-size: 14px;
+        }
+    .btn{
+    width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
+    .par{
+        width: 100%;
+        font-size: 14px;
+    }
+    #con{
+        font-size: 14px;
+    }
+}
