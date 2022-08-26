@@ -1,6 +1,6 @@
 /* Header Section Start */
 header{
-      width: 100%;
+      width: 100vw;
       height: 125vh;
       background-image: url('https://sparkamerica.com/wp-content/uploads/2020/12/HomeHeader1.jpg');
       background-position: 10%;
@@ -28,7 +28,6 @@ header::after{
 
 .about{
       width: 52%;
-      height: 350px;
       position: absolute;
       z-index: 4;
       margin: 90px;
@@ -36,19 +35,12 @@ header::after{
 }
 
 .about>h2{
-      font-size: 30px;
-      font-weight: 400;
+      font-size: 1.9rem;
+      font-weight: 300;
 }
 
-.about>p{
-      width: 68%;
-      font-size: 30px;
-      font-family: 'Roboto',sans-serif;
-      font-weight: 400;
-}
-
-.about>div>p{
-      line-height: 20px;
+.p2{
+      line-height: 1.5;
 }
 
 .underline{
@@ -78,9 +70,9 @@ header::after{
 .heading2{
       width: 55%;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 1.9rem;
       text-align: left;
-      font-weight: normal;
+      font-weight: 300;
 }
 
 .para2{
@@ -88,6 +80,7 @@ header::after{
       margin-bottom: 20px;
       text-align: left;
       font-size: 0.9rem;
+      font-weight: 300;
 }
 
 .btn{
@@ -139,7 +132,20 @@ header::after{
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position: 5%;
-      padding: 150px 120px;
+      height: 86vh;
+}
+
+.section_two>div{
+      background-color: rgba(255,255,255,0.46);
+      height: 86vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.content{
+      width: 82%;
+      margin: auto;
 }
 
 .underline3{
@@ -169,9 +175,9 @@ header::after{
 .section_three h2{
       width: 100%;
       font-weight: normal;
-      font-size: 30px;
+      font-size: 1.9rem;
       text-align: left;
-      font-weight: normal;
+      font-weight: 300;
 }
 
 .underline4{
@@ -186,6 +192,7 @@ header::after{
       line-height: 20px;
       text-align: left;
       font-size: 0.9rem;
+      font-weight: 300;
 }
 
 .section_three>div>p+p{
@@ -219,8 +226,7 @@ header::after{
       grid-template-areas:
       "box1 box2"
       "box3 box2"
-      "box3 box4"
-      ;
+      "box3 box4";
 }
 
 .section_three>:last-child>div>img{
@@ -243,3 +249,156 @@ header::after{
 .box4{
       grid-area: box4;
 }
+
+/* Body Section End */
+
+
+/* Responsive For Medium Screen */
+@media (min-width: 421px) and (max-width: 850px) {
+      /* Header Section */
+      header{
+            width: 100%;
+            background-size: contain;
+            background-position: right;
+            height: 60vh;
+      }
+
+      .about{
+            width: 60%;
+            margin: 20px 20px 20px 30px;
+      }
+
+      .about h2{
+            font-size: 2rem;
+            font-weight: 400;
+      }
+
+      .about p{
+            font-weight: 400;
+            font-size: 1.1rem;
+            line-height: 1.3;
+      }
+      
+
+      /* Section One */
+      .section_one{
+            width: 90%;
+      }
+
+      .heading2{
+            font-size: 2rem;
+            font-weight: 400;
+      }
+
+      .para2{
+            font-weight: 400;
+            font-size: 1.1rem;
+      }
+
+      .btn>a>button{
+            font-size: 1rem; 
+      }
+
+
+      /* Section Two */
+      .section_two{
+            height: 30vh;
+            background-size: contain;
+            background-attachment: fixed;
+      }
+
+      .section_two>div{
+            height: 30vh;
+            width: 100vh;
+      }
+
+      .content{
+            width: 100%;
+            padding: 35px;
+      }
+
+      .content>h2{
+            width: 100%;
+      }
+
+      .content>p{
+            width: 80%;
+      }
+
+      /* Section Three */
+      .section_three{
+            width: 90%;
+      }
+
+      .section_three>:last-child{
+            height: 35vh;
+      }
+
+      .section_three h2{
+            font-weight: 400;
+            font-size: 27px;
+      }
+
+      .section_three p{
+            font-size: 1.2rem;
+            display: inline-block;
+            font-weight: 400;
+      }
+}     
+
+ /*Responsive For Small Screen */
+ @media (max-width: 420px) {
+      header{
+            width: 100%;
+            background-size: cover%;
+            background-position: top;
+            height: 200vh;
+      }
+
+      .about{
+            width: 75%;
+            margin: 0;
+            padding: 15px;
+            height: auto;
+      }
+
+      .about>h2{
+            width: 100%;
+            font-size: 20px;
+      }
+
+      .about p{
+            width: 100%;
+            font-size: 13px;
+            line-height: 1.3;
+            font-weight: 400;
+      }
+
+      header>img{
+            width: 100%;
+      }
+
+
+      /* Section One
+      .section_one{
+            width: 100%;
+            flex-direction: column;
+            border: 3px solid blue;
+            padding: 0;
+            justify-content: flex-start;
+      }
+
+      .section_one>div{
+            width: 100%;
+      }
+
+      .heading2{
+            font-size: 20px;
+      }
+
+      .para2{
+            font-size: 13px;
+            border: 3px solid;
+            width: 90%;
+      } */
+ }
