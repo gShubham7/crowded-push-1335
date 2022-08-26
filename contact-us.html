@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT US - SparkAmerica</title>
     <link rel="stylesheet" href="Style/contact-us.css" />
     <link rel="stylesheet" href="Style/footer.css" />
     <link rel="stylesheet" href="Style/navbar.css" />
+    <link rel="icon" href="SPARK-America.png" />
+    <script
+      src="https://kit.fontawesome.com/0abc29f6ea.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="position_index">
       <!-- Import Navbar Data Append Here -->
     </nav>
+    <div id="line"></div>
+    <center>
+      <div class="navbar_icon">
+
+      </div>
+    </center>
+    
     <div id="content_container">
       <div id="content">
         <!-- Ready join content -->
@@ -73,7 +86,20 @@
                   </li>
                 </ul>
               </div>
-              <button type="submit">SEND MESSAGE</button>
+              <div id="captcha">
+                <input
+                  id="captcha_checkbox"
+                  type="checkbox"
+                  onclick="off()"
+                  value="off"
+                />
+                <img
+                  src="https://www.a2hosting.com/blog/content/uploads/2017/02/image01-1.png"
+                />
+                <div><label id="war_captcha"></label></div>
+              </div>
+
+              <button type="submit" id="submit">SEND MESSAGE</button>
             </form>
           </div>
           <div id="contact_details">
@@ -99,8 +125,10 @@
 </html>
 <script src="script/contact-us.js"></script>
 <script type="module">
-  import { navbar, footer } from "./Componets/navbar_footer.js";
+  import {navbar,footer,navbar2} from './Componets/navbar_footer.js';
 
   document.querySelector("nav").innerHTML = navbar();
   document.querySelector("footer").innerHTML = footer();
+  document.querySelector(".navbar_icon").innerHTML = navbar2();
+
 </script>
