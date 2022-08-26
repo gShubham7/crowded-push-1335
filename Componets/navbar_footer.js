@@ -15,7 +15,7 @@ const navbar = () => {
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="partner.html">
                                     PARTNERS
                               </a>
                         </li>
@@ -25,17 +25,17 @@ const navbar = () => {
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="ourapp.html">
                                     THE APP
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="contact-us.html">
                                     CONTACT US
                               </a>
                         </li>
                         <li>
-                              <a href="./registerPage.html">
+                              <a href="registerPage.html">
                                     REGISTER
                               </a>
                         </li>

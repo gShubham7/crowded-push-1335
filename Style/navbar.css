@@ -12,16 +12,18 @@
       width: 100%;
       min-height: 100vh;
       overflow-x: hidden;
-      font-family: 'League Gothic', sans-serif;
       font-family: 'Roboto', sans-serif;
   }
+
   .fa-instagram{
       color:orangered;
       margin-right: 15px;
   }
+
   .fa-square-facebook{
       color:rgb(54, 137, 220)
   }
+  
   nav{
       width: 100%;
       padding-top: 5px;
