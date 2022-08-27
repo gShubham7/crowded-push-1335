@@ -1,4 +1,5 @@
 
+
 footer{
       width: 100%;
       background-color: #3D7CC9;
@@ -9,6 +10,7 @@ footer{
       flex-direction: column;
       justify-content: space-between;
       padding-bottom: 40px;
+      font-size: 20px;
 }
 
 footer>div{
@@ -39,6 +41,7 @@ footer>div>div>ul li{
       font-size: 15px;
       color: #EAEAEA;
       font-weight: 400;
+      margin-bottom:10px ;
 }
 
 footer>div>div>ul>li>a{
@@ -47,22 +50,49 @@ footer>div>div>ul>li>a{
 }
 #footer_tag{
   font-size: 17px;
-  color: rgb(183, 176, 176);
-  margin-top: 30px;
+  color:#d3d3d3;
+  margin-top: 100px;
 
 }
 
-@media all and (min-width:360px) and (max-width:768px){
+@media all and (min-width:360px) and (max-width:468px){
+      *{
+            font-size: 15px;
+      }
+      footer>div>div>ul>li>a{
+            text-decoration: none;
+            color: #EAEAEA;
+            width:360px;
+      }
+      footer>div>div>ul li{
+            width: 360px;
+      }
 footer>div{
   display: table;
   width: 100%;
   padding: 30px;
   text-align: left;
-  line-height: 30px;
+  line-height: 20px;
 
 }
 #footer_tag{
-  font-size: 13px;
-  color: rgb(183, 176, 176);
+      font-size: 13px;
+      color: #d3d3d3;
+      text-align: center;
+    }
 }
-}
+@media all and (min-width:469px) and (max-width:768px){
+      footer>div{
+        display: table;
+        width: 100%;
+        padding: 30px;
+        text-align: left;
+        line-height: 20px;
+      
+      }
+      #footer_tag{
+            font-size: 13px;
+            color: #d3d3d3;
+            text-align: center;
+          }
+      }

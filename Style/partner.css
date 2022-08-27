@@ -1,6 +1,10 @@
 *{
     color:#0a0001;
-    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto Thin',sans-serif;
     font-weight: 300;
 
     
@@ -35,7 +39,9 @@ h2{
 span{
     color: blue;
 }
-
+p{
+    text-align: justify;
+}
 #vionic{
     border:1px solid black;
     margin-top: 50px;
@@ -84,6 +90,12 @@ button:hover{
     font-style: inherit;
 
     
+}
+#BABB{
+    margin-top: 23px;
+}
+#BABB_btn{
+    margin-top: 20px;
 }
 #btn_oswald{
     padding: 20px 30px;
@@ -194,7 +206,7 @@ button:hover{
         padding: 10px;
     }
     #vp{
-        width:87%;
+        width:100%;
     }
     #parent div>img{
         width: 90%;

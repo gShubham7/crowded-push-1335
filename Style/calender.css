@@ -1,0 +1,111 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto Thin',sans-serif;
+    font-weight: 300;
+    
+}
+#desc{
+    width: 80%;
+    margin: auto;
+    line-height: 25px;
+    font-size: inherit;
+}
+
+.line2{
+    border:1.5px solid #D7282F;
+    width: 150px;
+    background-color: #D7282F;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#desc>h2{
+    font-size: 30px;
+    font-family:'Roboto Thin','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 330;
+     
+}
+#cal_des_tag{
+    color: black;
+    text-align: justify;
+}
+span{
+    color: blue;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.calender_divs{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.calender_divs div{
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.calender_divs div>img{
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.calender_divs div>h2{
+    font-size: 30px;
+    font-family:'Roboto Thin','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 330;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.calender_divs div>p{
+    color:#000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+strong{
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-size:20px;
+}
+
+@media all and (min-width:360px) and (max-width:480px){
+    .calender_divs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #desc>h2{
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px){
+    .calender_divs{
+    grid-template-columns: repeat(2,1fr);
+    }
+    #desc>h2{
+        text-align: left;
+        margin-top: 30px;
+    }
+    #dec_tag{
+        margin-top: 50px;
+    }
+    #july_tag{
+        margin-top: 50px;
+    }
+    #april_tag{
+        margin-top: 35px;
+    }
+}
