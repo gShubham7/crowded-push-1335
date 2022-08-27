@@ -203,7 +203,7 @@ input[type="checkbox"]:checked+.checkmark>span:before {
 
 @media (min-width:360px) and (max-width:768px) { 
 
-    form {
+    .captcha {
         width: auto;       
     }    
 }
