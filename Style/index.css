@@ -268,11 +268,11 @@ header::after{
             width: 100%;
             background-size: contain;
             background-position: right;
-            height: 60vh;
+            height: 50vh;
       }
 
       #second_navbar{
-            display: block;
+            display: inline-block;
       }
 
       .position_index{
@@ -325,7 +325,7 @@ header::after{
 
       .section_two>div{
             height: 30vh;
-            width: 100vh;
+            width: 100wh;
       }
 
       .content{
@@ -366,9 +366,10 @@ header::after{
  @media (min-width: 270px) and (max-width: 420px) {
       header{
             width: 420px;
-            background-size: 90% 50vh;
+            background-size: 100% 50vh;
             background-position: left;
             height: 420px;
+            margin-top: -40px;
       }
 
       #second_navbar{
@@ -433,7 +434,6 @@ header::after{
       }
 
       .btn{
-            /* width: 420px; */
             text-align: center;
             margin-top: 20px;
       }
@@ -442,7 +442,7 @@ header::after{
       /* Section Two */
       .section_two{
             background-attachment: scroll;
-            height: 40vh;
+            height: auto;
             background-size: cover;
             width: 100%;
             margin: 0;
@@ -450,17 +450,23 @@ header::after{
             padding: 0;
       }
 
-      #second_navbar{
-            display: block;
-      }
-
-      .content{
-            padding: 10px;
-            width: 100%;
+      .section_two>div{
+            height: auto;
+            padding: 20px;
       }
 
       .content>h2{
             font-size: 20px;
+            margin: auto;
+            width: 80%;
+      }
+
+      .content>p{
+            margin: auto;
+      }
+
+      .underline3{
+            margin-left: 35px;
       }
 
 
@@ -521,5 +527,15 @@ header::after{
       .section_three button{
             width: 150px;
             margin-left: 100px;
+      }
+
+
+      #second_navbar{
+            display: block;
+      }
+
+      .content{
+            padding: 10px;
+            width: 100%;
       }
  }
