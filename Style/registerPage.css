@@ -200,3 +200,10 @@ input[type="checkbox"]:checked+.checkmark>span:before {
     background-color: transparent;
     color: teal;
 }
+
+@media (min-width:360px) and (max-width:768px) { 
+
+    form {
+        width: auto;       
+    }    
+}
