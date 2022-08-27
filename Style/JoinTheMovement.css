@@ -3,8 +3,12 @@
   font-family: "Roboto", sans-serif;
   line-height: 25px;
 }
+body{
+  margin: 0;
+  padding: 0;
+}
 
-#joincontainer {
+#partner_container{
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -23,7 +27,7 @@
   margin: 20px 0px;
   height: 3px;
 }
-#joincontainer a {
+#partner_container a {
   background: #0082ca;
   text-decoration: unset;
   color: white;
@@ -38,7 +42,7 @@
   width: 70%;
   margin: 50px;
 }
-#joincontainer a {
+#partner_container a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +59,7 @@
 #Icon {
   font-size: 20px;
 }
-#joincontainer h4 {
+#partner_container h4 {
   font-size: 25px;
 }
 #line {
@@ -78,5 +82,8 @@
   }
   .uabb-heading{
     text-align: center;
+  }
+  .list_of_links{
+    height: 90px;
   }
 }
