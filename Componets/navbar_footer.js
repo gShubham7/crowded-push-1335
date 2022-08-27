@@ -136,7 +136,7 @@ let navbar2 = function(){
       <div class="list_of_links">
       <ul>
       <li>
-            <a href="">
+            <a href="JoinTheMovement.html">
                   JOIN THE MOVEMENT
             </a>
       </li>
