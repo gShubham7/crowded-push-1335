@@ -173,6 +173,106 @@ nav {
     }
 
     .list_of_links {
+=======
+  }
+  #lists{
+      width: 61.5%;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+  }
+  
+  #lists>ul:first-child{
+      width: 85%;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+  }
+  
+  #lists>ul>li>a{
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: black;
+  }
+  
+  #lists>ul>li>a:hover{
+      color: #D7282F;
+  }
+  
+  #lists>ul:last-child{
+      list-style-type: none;
+      width: 10%;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .nav{
+      width:100%;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      justify-content: space-between;
+  }
+  
+  #logo2>a>img{
+      width: 60%;
+      margin-left: -90px;
+    
+  }
+  #menu_icon{
+      font-size: 20px;
+      margin-right: 20px;
+  
+  }
+  .list_of_links{
+      text-align: left;
+      padding: 15px;
+      background-color: white;
+      box-sizing: border-box;
+      list-style: none;
+      margin-top: 10px;
+      display: none;
+      margin-left: 30px;
+  
+  }
+  .list_of_links ul{
+      float: left;
+  }
+  .list_of_links ul li{
+      margin-bottom: 20px;
+      list-style-type: none;
+  }
+  .list_of_links ul li a{
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: 400;
+      margin-right: 20px;
+  
+  }
+  #menu_icon_delete{
+      display: none;
+      background-color: #d7282f;
+      color:#ffffff;
+      font-size: 20px;
+      margin-right: 15px;
+      padding: 3px 7px;
+      border-radius: 5px;
+  }
+  
+  @media (min-width:270px) and (max-width:481px){
+      nav{
+          display: none;
+      }
+  
+      .navbar_icon{
+          display: block;
+      }
+      #line{
+            display: none;
+      }
+      .list_of_links{
         text-align: left;
     }
 
@@ -210,6 +310,10 @@ nav {
 @media (min-width:769px) and (max-width:1500px) {
     nav {
         display: block;
+    }
+    .all{
+        display: none;
+        margin-bottom: 30px;
     }
 
     .nav {

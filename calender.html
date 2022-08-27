@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calerder - SparkAmerica</title>
+    <title>CALENDER - SparkAmerica</title>
     <link rel="icon" href="SPARK-America.png">
     <link rel="stylesheet" href="./Style/navbar.css">
     <link rel="stylesheet" href="./Style/footer.css">
@@ -129,28 +129,9 @@ document.querySelector(".navbar_icon").innerHTML = navbar2();
 </script>
 
 <script>
-    function getmenu(){
-    event.preventDefault();
-    document.querySelector(".list_of_links").style.display = "block";
-    document.querySelector("#menu_icon_delete").style.display = "block";
-    document.querySelector("#menu_icon_div").style.display = "none";
-    
-    document.querySelector("#desc").style.marginTop = "270px";
-
- }
-
- function Delete(){
-    event.preventDefault();
-    document.querySelector("#menu_icon_delete").style.display = "none";
-    document.querySelector("#menu_icon_div").style.display = "block";
-    document.querySelector(".list_of_links").style.display = "none";
-    document.querySelector("#desc").style.marginTop = "30px";
-
-
- }
-
 function phs(){
     event.preventDefault();
     window.location.href = "peopleone_sign_in.html"
 }
 </script>
+<script src="./Script/navbar_media.js"></script>

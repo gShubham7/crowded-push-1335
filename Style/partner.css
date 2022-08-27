@@ -3,16 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     font-family:'Roboto Thin',sans-serif;
     font-weight: 300;
 
     
 }
 h2{
-    font-family: 'Roboto',sans-serif;
     font-size: 30px;
-    font-weight: 50;
+    font-family:'Roboto Thin','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 330;
+}
+#partner_desc_tag{
+    color: black;
+    text-align: justify;
 }
 #line{
     border:1px solid #D7282F;
@@ -193,7 +196,7 @@ button:hover{
         margin-top: 30px;
     }
 
-@media all and (min-width:360px) and (max-width:768px){
+@media all and (min-width:270px) and (max-width:768px){
   
     #parent{
         padding: 15px;
