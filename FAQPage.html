@@ -9,7 +9,9 @@
     <link rel="icon" href="SPARK-America.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap&family=Oswald:wght@200;300;400;500;600;700" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto&display=swap&family=Oswald:wght@200;300;400;500;600;700"
+        rel="stylesheet">
     <link rel="stylesheet" href="./Style/FAQPage.css">
     <script src="https://use.fontawesome.com/cc6dc82e81.js"></script>
 </head>
@@ -17,9 +19,10 @@
 <body>
     <header class="sticky_top">
         <div id="nav">
-            <!-- <div id="mobileNav">
-                <a href="javascript:void(0);" role="button" onclick="listIcon(this);return false;" class="nav_list_icon_img_a"><img src="/content/images/ic_menu_black_48px.svg" id="nav_list_icon_img" alt="menu"></a>
-            </div>mobileNav -->
+            <div id="mobile_nav">
+                <img src="https://portal.peopleonehealth.com/content/images/ic_menu_black_48px.svg"
+                    id="nav_list_icon_img" alt="menu"></a>
+            </div>
             <a href="./FAQPage.html" class="nav_logo">
                 <img src="https://portal.peopleonehealth.com/Content/images/people_one_logo.svg" class="logo">
             </a>
@@ -30,18 +33,28 @@
             </a>
         </div>
     </header>
+    <!-- ----------------------side-panel-------------------------- -->
+    <!-- <div id="sidePanel" class="sidepanel">
+        <a id="closebtn">Your Cart has (<span></span> items)<span>&times;</span></a>  
+        <div id="cart"></div>
+        <div>
+            <p>Total : <span></span></p>
+            <button>PAY VIA CARD/OTHERS</button>
+        </div>             
+      </div> -->
     <div id="container">
         <nav id="nav_w">
             <ul id="nav_w1">
                 <li>
-                    <a href="javascript:void(0);" role="button" onclick="listIcon(this);return false;"
-                        class="nav_close_menu_a">
-                        <!-- <img src="/Content/images/people_one_logo.svg" alt="PeopleOne Health" class="logo_open">
-                        <img src="/content/images/ic_close_black_48px.svg" class="nav_close_menu" alt="Close menu"> -->
+                    <a href="javascript:void(0);" class="nav_close_menu_a">
+                        <img src="https://portal.peopleonehealth.com/Content/images/people_one_logo.svg"
+                            alt="PeopleOne Health" class="logo_open">
+                        <img src="https://portal.peopleonehealth.com/content/images/ic_close_black_48px.svg"
+                            class="nav_close_menu" alt="Close menu">
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav_a1 ">
+                    <a href="./redirected.html" class="nav_a1 ">
                         <img src="https://portal.peopleonehealth.com/content/images/nav_calendar_challenges.svg"
                             class="nav_i" alt="">
                         <span class="nav_link">
@@ -50,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav_a1 ">
+                    <a href="./redirected.html" class="nav_a1 ">
                         <img src="https://portal.peopleonehealth.com/content/images/nav_healthy_living.svg"
                             class="nav_i" alt="">
                         <span class="nav_link">
@@ -59,7 +72,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" class="nav_a1" target="_blank">
+                    <a href="./redirected.html" class="nav_a1" target="_blank">
                         <img src="https://portal.peopleonehealth.com/content/images/nav_learn_more2.svg" class="nav_i"
                             alt="">
                         <span class="nav_link">
@@ -122,8 +135,8 @@
                     </div>
                     <div class="disclaimer">
                         <span>© PeopleOne Health 2022</span>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms of Use</a>
+                        <a href="https://portal.peopleonehealth.com/HealthyLiving/Article/1464">Privacy Policy</a>
+                        <a href="https://portal.peopleonehealth.com/HealthyLiving/Article/1463">Terms of Use</a>
                     </div>
                 </div>
             </footer>
@@ -132,3 +145,15 @@
 </body>
 
 </html>
+<script>
+    document.querySelector("#mobile_nav").addEventListener("click", openNav);
+    function openNav() {
+        document.getElementById("nav_w").style.display = "block";
+        document.querySelector("#nav_w1>li:first-child").style.display = "block";
+    }
+    document.querySelector(".nav_close_menu").addEventListener("click", closeNav);
+    function closeNav() {
+        document.getElementById("nav_w").style.display = "none";
+        document.querySelector("#nav_w1>li:first-child").style.display = "none";
+    }
+</script>
