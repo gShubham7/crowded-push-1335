@@ -173,8 +173,8 @@ nav {
     }
 
     .list_of_links {
-=======
-  }
+        text-align: left;
+   }
   #lists{
       width: 61.5%;
       display: flex;
@@ -260,6 +260,7 @@ nav {
       padding: 3px 7px;
       border-radius: 5px;
   }
+}
   
   @media (min-width:270px) and (max-width:481px){
       nav{
