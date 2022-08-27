@@ -16,7 +16,7 @@ h1{
     font-size: 16px;
     line-height: 24px;
 }
-body{
+#ourapp_desc{
     width: 78%;
     margin: auto;
 }
@@ -72,6 +72,13 @@ display: flex;
     margin-left: 10%;
 }
 .bhuro{
+    color: rgb(84, 137, 252);
+    cursor: pointer;
+}
+.bhuro:hover{
+    color: gray;
+}
+.bhuri{
     color: rgb(84, 137, 252);
 }
 

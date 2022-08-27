@@ -69,6 +69,8 @@ cursor: pointer;
     height: 2px;
     position: relative;
 }
+
+
 @media all and (max-width:987px) and (min-width:775px){
     .box{
         display: block;
