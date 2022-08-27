@@ -23,8 +23,7 @@ body{
     font-size: 1.2rem;
 }
 
-#btns+div {
-    text-decoration: none;
+#btns+div{
     color: #006da8;
     background-color: transparent;
     border: 1px solid transparent;
@@ -34,4 +33,8 @@ body{
     font-weight: 600;
     text-align: center;
     margin-top: 1.2rem;
+}
+
+#btns+div>a {
+    text-decoration: none;    
 }
