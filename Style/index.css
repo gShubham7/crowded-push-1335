@@ -369,7 +369,7 @@ header::after{
             background-size: 100% 50vh;
             background-position: left;
             height: 420px;
-            margin-top: -20px;
+            margin-top: -25px;
       }
 
       #second_navbar{
@@ -493,7 +493,7 @@ header::after{
 
       .section_three p{
             width: 380px;
-            padding: 10px;
+            padding: 0px 10px;
             font-weight: 400;
       }
 
