@@ -10,7 +10,7 @@ const navbar = () => {
             <div id="lists">
                   <ul>
                         <li>
-                              <a href="">
+                              <a href="JoinTheMovement.html">
                                     JOIN THE MOVEMENT
                               </a>
                         </li>
@@ -84,7 +84,7 @@ const footer = () =>{
             <h3>CONTACT US</h3>
             <ul>
                   <li>
-                        <a href="">JOIN THE MOVEMENT</a>
+                        <a href="JoinTheMovement.html">JOIN THE MOVEMENT</a>
                   </li>
                   <li>
                         <a href="partner.html">PARTNERS</a>
