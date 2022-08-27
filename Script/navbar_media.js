@@ -3,7 +3,6 @@ function getmenu(){
    document.querySelector(".list_of_links").style.display = "block";
    document.querySelector("#menu_icon_delete").style.display = "block";
    document.querySelector("#menu_icon_div").style.display = "none";
-   
    document.querySelector(".all").style.marginBottom = "270px";
 
 }
