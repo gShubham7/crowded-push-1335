@@ -26,6 +26,10 @@ header::after{
       bottom: 0;
 }
 
+#second_navbar{
+      display: none;
+}
+
 .about{
       width: 52%;
       position: absolute;
@@ -162,7 +166,6 @@ header::after{
       width: 85%;
       height: auto;
       margin: auto;
-      margin: auto;
       display: flex;
       justify-content: space-between;
       padding: 120px 0;
@@ -193,6 +196,11 @@ header::after{
       text-align: left;
       font-size: 0.9rem;
       font-weight: 300;
+}
+
+.section_three p>a{
+      text-decoration: none;
+      color: blue;
 }
 
 .section_three>div>p+p{
@@ -261,6 +269,14 @@ header::after{
             background-size: contain;
             background-position: right;
             height: 60vh;
+      }
+
+      #second_navbar{
+            display: block;
+      }
+
+      .position_index{
+            display: none;
       }
 
       .about{
@@ -347,12 +363,20 @@ header::after{
 }     
 
  /*Responsive For Small Screen */
- @media (max-width: 420px) {
+ @media (min-width: 270px) and (max-width: 420px) {
       header{
-            width: 100%;
-            background-size: cover%;
-            background-position: top;
-            height: 200vh;
+            width: 420px;
+            background-size: 90% 50vh;
+            background-position: left;
+            height: 420px;
+      }
+
+      #second_navbar{
+            display: block;
+      }
+
+      .position_index{
+            display: none;
       }
 
       .about{
@@ -379,26 +403,123 @@ header::after{
       }
 
 
-      /* Section One
+      /* Section One */
       .section_one{
             width: 100%;
             flex-direction: column;
-            border: 3px solid blue;
             padding: 0;
             justify-content: flex-start;
+            overflow: auto;
       }
 
       .section_one>div{
             width: 100%;
+            padding: 10px;
       }
 
       .heading2{
-            font-size: 20px;
+            width: 100%;
+            font-size: 23px;
       }
 
       .para2{
-            font-size: 13px;
-            border: 3px solid;
+            font-size: 14px;
+            width: 80%;
+            font-weight: 400;
+      }
+
+      .section_one img{
+            width: 100%;
+      }
+
+      .btn{
+            /* width: 420px; */
+            text-align: center;
+            margin-top: 20px;
+      }
+
+
+      /* Section Two */
+      .section_two{
+            background-attachment: scroll;
+            height: 40vh;
+            background-size: cover;
+            width: 100%;
+            margin: 0;
+            margin: 40px 0;
+            padding: 0;
+      }
+
+      #second_navbar{
+            display: block;
+      }
+
+      .content{
+            padding: 10px;
+            width: 100%;
+      }
+
+      .content>h2{
+            font-size: 20px;
+      }
+
+
+      /* Section Three */
+      .section_three{
+            display: table;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+      }
+
+      .section_three>div{
+            width: 380px;
+            text-align: justify;
+      }
+
+      .section_three h2{
+            width: 380px;
+            padding: 10px;
+            font-size: 20px;
+      }
+
+      .section_three p{
+            width: 380px;
+            padding: 10px;
+            font-weight: 400;
+      }
+
+      .section_three p>a{
+            text-decoration: none;
+            color: blue;
+      }
+
+      .underline4{
+            width: 50px;
+            margin-left: 10px;
+      }
+
+      .section_three>:last-child{
+            text-align: center;
+            display: table;
+            width: 400px;
+            padding: 15px;
+      }
+
+      .section_three>:last-child img{
             width: 90%;
-      } */
+            padding: 10px;
+      }
+
+      .section_three center{
+            width: 100%;
+            text-align: center;
+      }
+
+      .section_three button{
+            width: 150px;
+            margin-left: 100px;
+      }
  }
