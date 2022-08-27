@@ -55,7 +55,7 @@ footer>div>div>ul>li>a{
 
 }
 
-@media all and (min-width:360px) and (max-width:468px){
+@media all and (min-width:270px) and (max-width:468px){
       *{
             font-size: 15px;
       }
@@ -70,9 +70,9 @@ footer>div>div>ul>li>a{
 footer>div{
   display: table;
   width: 100%;
-  padding: 30px;
   text-align: left;
   line-height: 20px;
+  margin-left: -30px;
 
 }
 #footer_tag{
@@ -81,11 +81,11 @@ footer>div{
       text-align: center;
     }
 }
-@media all and (min-width:469px) and (max-width:768px){
+@media all and (min-width:690px) and (max-width:768px){
       footer>div{
         display: table;
         width: 100%;
-        padding: 30px;
+        padding: 0px;
         text-align: left;
         line-height: 20px;
       

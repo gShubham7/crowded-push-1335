@@ -147,7 +147,7 @@
       border-radius: 5px;
   }
   
-  @media (min-width:200px) and (max-width:481px){
+  @media (min-width:270px) and (max-width:481px){
       nav{
           display: none;
       }
@@ -189,6 +189,10 @@
   @media (min-width:769px) and (max-width:1500px){
     nav{
         display: block;
+    }
+    .all{
+        display: none;
+        margin-bottom: 30px;
     }
 
     .nav{
