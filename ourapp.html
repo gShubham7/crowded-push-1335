@@ -96,4 +96,26 @@ document.querySelector(".p2>.bhuro").addEventListener("click",function(){
  
  
  </script>
-<script src="./Script/navbar_media.js"></script>
+<!-- <script src="./Script/navbar_media.js"></script> -->
+
+<script>
+    function getmenu(){
+    event.preventDefault();
+    document.querySelector(".list_of_links").style.display = "block";
+    document.querySelector("#menu_icon_delete").style.display = "block";
+    document.querySelector("#menu_icon_div").style.display = "none";
+    
+    document.querySelector("#ourapp_desc").style.marginTop = "280px";
+
+ }
+
+ function Delete(){
+    event.preventDefault();
+    document.querySelector("#menu_icon_delete").style.display = "none";
+    document.querySelector("#menu_icon_div").style.display = "block";
+    document.querySelector(".list_of_links").style.display = "none";
+    document.querySelector("#ourapp_desc").style.marginTop = "30px";
+
+
+ }
+</script>
