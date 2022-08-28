@@ -159,6 +159,10 @@ nav {
     border-radius: 5px;
 }
 
+.navbar_icon{
+    display: none;
+}
+
 @media (min-width:200px) and (max-width:481px) {
     nav {
         display: none;
@@ -260,27 +264,6 @@ nav {
       padding: 3px 7px;
       border-radius: 5px;
   }
-}
-  
-  @media (min-width:270px) and (max-width:481px){
-      nav{
-          display: none;
-      }
-  
-      .navbar_icon{
-          display: block;
-      }
-      #line{
-            display: none;
-      }
-      .list_of_links{
-        text-align: left;
-    }
-
-    #menu_icon,
-    #menu_icon_delete {
-        margin-right: 30px;
-    }
 }
 
 @media (min-width:482px) and (max-width:768px) {
