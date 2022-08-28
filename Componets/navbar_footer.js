@@ -41,7 +41,7 @@ const navbar = () => {
                         </li>
                   </ul>
 
-                  <ul>
+                  <ul class= "media_icon">
                         <li>
                               <a href="https://www.facebook.com/SparkAmericaMovement">
                                     <i class="fa-brands fa-square-facebook"></i>
@@ -81,7 +81,7 @@ const footer = () =>{
       </div>
 
       <div>
-            <h3>CONTACT US</h3>
+            <h3>SPARKAMERICA</h3>
             <ul>
                   <li>
                         <a href="JoinTheMovement.html">JOIN THE MOVEMENT</a>

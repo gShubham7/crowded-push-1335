@@ -43,15 +43,16 @@ header::after{
       font-weight: 300;
 }
 
-.p2{
+.p2,.p1{
       line-height: 1.5;
+      font-size: 15px;
 }
 
 .underline{
       width: 8%;
       border-top: 3px solid #d7282f;
       display: inline-block;
-      margin: 8px 0;
+      margin: 12px 0 8px 0;
 }
 /* Header Section End */
 
@@ -339,6 +340,7 @@ header::after{
 
       .content>p{
             width: 80%;
+            
       }
 
       /* Section Three */
