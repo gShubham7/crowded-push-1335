@@ -31,12 +31,22 @@
 </head>
 
 <body>
+      <div id="second_navbar">
+            <nav>
+
+            </nav>
+            <center>
+                <div class="navbar_icon">
+        
+                </div>
+            </center>
+      </div>
       <!-- Header Section Start -->
       <header>
             <!-- Navbar Section -->
-            <nav class="position_index">
+            <div class="position_index">
                   <!-- Import Navbar Data Append Here -->
-            </nav>
+            </div>
 
             <div class="about">
                   <h2>WHAT IS SPARKAMERICA?</h2>
@@ -87,14 +97,14 @@
                   <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/SparkCity_Columbus.jpg"
                         alt="">
 
-                  <div class="btn">
-                        <a href="">
+                  <center class="btn">
+                        <a href="JoinTheMovement.html">
                               <button>
                                     JOIN THE MOVEMENT
                                     <i class='fas fa-long-arrow-alt-right'></i>
                               </button>
                         </a>
-                  </div>
+                  </center>
             </div>
 
             <div>
@@ -109,7 +119,7 @@
                         alt="">
 
                   <div class="btn">
-                        <a href="">
+                        <a href="partner.html">
                               <button>
                                     OUR PARTNER NETWORK
                                     <i class='fas fa-long-arrow-alt-right'></i>
@@ -135,14 +145,14 @@
                               healthy.
                         </p>
 
-                        <div class="btn">
-                              <a href="">
+                        <center class="btn">
+                              <a href="calender.html">
                                     <button>
                                           LEARN MORE
                                           <i class='fas fa-long-arrow-alt-right'></i>
                                     </button>
                               </a>
-                        </div>
+                        </center>
                   </div>
             </div>
       </section>
@@ -155,17 +165,17 @@
                   <h2>PEOPLEONE HEALTH APP AND WEBSITE</h2>
                   <div class="underline4"></div>
                   <p>
-                        At the core of SparkAmerica you'll find the PeopleOne Health app. This technology platform helps
+                        At the core of SparkAmerica you'll find the  <a href="ourapp.html"> PeopleOne Health app. </a> This technology platform helps
                         our members track their health and join in challenges through our easy-to-use Fitness Game. So
                         whether you're an individual or part of a large corporation, you can have access to our world
                         class platform that's intuitive, fun, and
                   </p>
                   <p>FREE.</p>
-                  <div>
-                        <a href="">
+                  <center>
+                        <a href="ourapp.html">
                               <button>LEARN MORE</button>
                         </a>
-                  </div>
+                  </center>
             </div>
 
             <div>
@@ -202,6 +212,15 @@
 
       import { navbar, footer } from './Componets/navbar_footer.js';
 
-      document.querySelector("nav").innerHTML = navbar();
-      document.querySelector("footer").innerHTML = footer();
+      document.querySelector(".position_index").innerHTML = navbar();
+
 </script>
+
+<script type="module">
+      import {navbar,footer,navbar2} from './Componets/navbar_footer.js';
+      document.querySelector("footer").innerHTML = footer();
+      document.querySelector(".navbar_icon").innerHTML = navbar2();
+      
+</script>
+
+<script src="Script/navbar_media.js"></script>

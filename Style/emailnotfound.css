@@ -69,6 +69,12 @@ cursor: pointer;
     height: 2px;
     position: relative;
 }
+.sep1{
+    border: 1px solid rgb(192, 181, 181);
+    width: 70%;
+    margin: auto;
+}
+
 @media all and (max-width:987px) and (min-width:775px){
     .box{
         display: block;

@@ -10,7 +10,7 @@ const navbar = () => {
             <div id="lists">
                   <ul>
                         <li>
-                              <a href="">
+                              <a href="JoinTheMovement.html">
                                     JOIN THE MOVEMENT
                               </a>
                         </li>
@@ -20,7 +20,7 @@ const navbar = () => {
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="calender.html">
                                     CALENDER
                               </a>
                         </li>
@@ -43,12 +43,12 @@ const navbar = () => {
 
                   <ul>
                         <li>
-                              <a href="">
+                              <a href="https://www.facebook.com/SparkAmericaMovement">
                                     <i class="fa-brands fa-square-facebook"></i>
                               </a>
                         </li>
                         <li>
-                              <a href="">
+                              <a href="https://www.instagram.com/sparkamericamovement/">
                                     <i class="fa-brands fa-instagram"></i>
                               </a>
                         </li>
@@ -84,22 +84,22 @@ const footer = () =>{
             <h3>CONTACT US</h3>
             <ul>
                   <li>
-                        <a href="">JOIN THE MOVEMENT</a>
+                        <a href="JoinTheMovement.html">JOIN THE MOVEMENT</a>
                   </li>
                   <li>
-                        <a href="">PARTNERS</a>
+                        <a href="partner.html">PARTNERS</a>
                   </li>
                   <li>
-                        <a href="">CALENDAR</a>
+                        <a href="calender.html">CALENDAR</a>
                   </li>
                   <li>
-                        <a href="">THE APP</a>
+                        <a href="ourapp.html">THE APP</a>
                   </li>
                   <li>
-                       <a href="">CONTACT US</a> 
+                       <a href="contact-us.html">CONTACT US</a> 
                   </li>
                   <li>
-                        <a href="">REGISTER</a>
+                        <a href="registerPage.html">REGISTER</a>
                   </li>
             </ul>
       </div>
@@ -112,7 +112,8 @@ const footer = () =>{
 
 
 let navbar2 = function(){
-      return  `<div class="nav">
+      return  `<div class="all">
+      <div class="nav">
       <div id="logo2">
             <a href="index.html">
                   <img src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-515x65.png"
@@ -131,54 +132,54 @@ let navbar2 = function(){
                   </a>
             </div>
       </div>
-     
-    </div>
-</div>
-
-<div class="list_of_links">
-<ul>
+      </div>
+      <div class="list_of_links">
+      <ul>
       <li>
-            <a href="">
+            <a href="JoinTheMovement.html">
                   JOIN THE MOVEMENT
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="partner.html">
                   PARTNERS
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="calender.html">
                   CALENDER
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="ourapp.html">
                   THE APP
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="contact-us.html">
                   CONTACT US
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="registerPage.html">
                   REGISTER
             </a>
       </li>
       <li>
-            <a href="">
+            <a href="https://www.facebook.com/SparkAmericaMovement">
                   <i class="fa-brands fa-square-facebook"></i>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/sparkamericamovement/">
                   <i class="fa-brands fa-instagram"></i>
             </a>
       </li>
 
    
 </ul>
-</div>`
+</div>
+    </div>
+    </div>`
+
 }
 
 

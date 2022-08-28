@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOIN THE MOVEMENT - SparkAmerica</title>
+    <link rel="stylesheet" href="Style/navbar.css" />
+    <link rel="stylesheet" href="Style/footer.css" />
+    <link rel="icon" href="SPARK-America.png" />
+    <link rel="stylesheet" href="./Style/JoinTheMovement.css" />
+    <script
+      src="https://kit.fontawesome.com/0abc29f6ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/26fc26f383.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="position_index">
+      <!-- Import Navbar Data Append Here -->
+    </nav>
+    <div id="line"></div>
+    <center>
+      <div class="navbar_icon"></div>
+    </center>
+    <div id="partner_container">
+      <div id="first">
+        <h2 class="uabb_heading">
+          <span class="uabb-heading-text"
+            >ONE PERSON, ONE COMMUNITY, ONE CITY AT A TIME</span
+          >
+        </h2>
+        <div class="separator-parrent">
+          <div class="separator"></div>
+        </div>
+        <div class="uabb-subheading uabb-text-editor">
+          <p style="text-align: left">
+            SparkAmerica is focused on building Fit &amp; Healthy leaders all
+            across the country. We do that by implementing programs in
+            SparkCities - urban and suburban localities whose business and civic
+            leaders have joined with us to create community and promote healthy
+            living. We are proud of the work being done and the partnerships
+            we've formed in each of these cities, and of the friendly
+            competition we see each year as they strive to be the healthiest
+            SparkCity in America!
+          </p>
+        </div>
+      </div>
+
+      <div id="second">
+        <h4 class="uabb-heading">
+          <span class="uabb-heading-text">JOIN SPARKAMERICA</span>
+        </h4>
+        <div class="separator-parrent">
+          <div class="separator"></div>
+        </div>
+        <p>
+          We have over
+          <strong>70 cities</strong> participating in SparkAmerica, click below
+          to sign up in your city today! You can join your city in three ways.
+        </p>
+        <ul>
+          <li>First, by being part of your #TeamCity.</li>
+          <li>
+            Second, by joining an existing business or organization in your
+            city.
+          </li>
+          <li>Third, by requesting to add your business or organization.</li>
+        </ul>
+      </div>
+
+      <div id="Button_">
+        <div id="icon">
+          <a href="registerPage.html">
+            <i class="fa-solid fa-square-check" id="Icon"></i>
+            <span>REGISTER HERE</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="third">
+        <div>
+          <div>
+            <p>
+              If you want to learn more about how the SparkAmerica Fit City
+              Challenge works and also learn how you can connect to the tools
+              inside SparkAmerica,
+              <b>download our toolkit!</b>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div id="Button_">
+            <a href="#">
+              <i class="fa-solid fa-screwdriver-wrench" id="Icon"></i>
+              <span>DOWNLOAD THE TOOLKIT (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="four">
+        <div>
+          <div>
+            <h4 class="uabb-heading">
+              <span>FIT CITY CHALLENGE</span>
+            </h4>
+
+            <div class="separator-parrent">
+              <div class="separator"></div>
+            </div>
+            <div>
+              <p>
+                The Fit City Challenge happens twice a year in the Spring and
+                Fall and is one of our most active challenges. Once you've
+                signed up fro SparkAmerica, you're automatically ready to
+                participate in the Fit City Challenge to help your city become
+                one of the healthiest in America. Check out the cities below to
+                see the latest leaderboards and get your organization and city
+                ready for the next Fit City Challenge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- Import Footer Data Append Here -->
+    </footer>
+  </body>
+</html>
+<script type="module">
+  import { navbar, footer, navbar2 } from "./Componets/navbar_footer.js";
+  document.querySelector("nav").innerHTML = navbar();
+  document.querySelector("footer").innerHTML = footer();
+  document.querySelector(".navbar_icon").innerHTML = navbar2();
+</script>
+<script >
+  function getmenu(){
+    event.preventDefault();
+    document.querySelector(".list_of_links").style.display = "block";
+    document.querySelector("#menu_icon_delete").style.display = "block";
+    document.querySelector("#menu_icon_div").style.display = "none";
+    
+    document.querySelector("#partner_container").style.marginTop = "300px";
+
+ }
+
+ function Delete(){
+    event.preventDefault();
+    document.querySelector("#menu_icon_delete").style.display = "none";
+    document.querySelector("#menu_icon_div").style.display = "block";
+    document.querySelector(".list_of_links").style.display = "none";
+    document.querySelector("#partner_container").style.marginTop = "30px";
+
+
+ }
+</script>

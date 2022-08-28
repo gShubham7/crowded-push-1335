@@ -6,7 +6,8 @@ h1{
     line-height: 39px;
     font-style: normal;
 }#sep1,#sep2,#sep3{
-    border:2px solid red;
+    margin: 20px 0px;
+    border:2px solid rgb(243, 164, 164);
     width: 15%;
 }
 .p1{
@@ -16,7 +17,7 @@ h1{
     font-size: 16px;
     line-height: 24px;
 }
-body{
+#ourapp_desc{
     width: 78%;
     margin: auto;
 }
@@ -73,6 +74,13 @@ display: flex;
 }
 .bhuro{
     color: rgb(84, 137, 252);
+    cursor: pointer;
+}
+.bhuro:hover{
+    color: gray;
+}
+.bhuri{
+    color: rgb(84, 137, 252);
 }
 
 @media all and (max-width:780px ){
@@ -88,12 +96,20 @@ display: flex;
     }
     #sep1{
         margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     #description2{
         position: relative;
         width: 105%;
         
-    } 
+    }#description3{
+        position: relative;
+        width: 75%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
     #image1,#image3{
         position: relative;
         left: 10%;

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon file -->
+    <link rel="icon" href="SPARK-America.png">
     <!-- font file -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&display=swap" rel="stylesheet">
     <!-- css file -->
@@ -21,10 +23,10 @@
             <div class="box">
                 <p class="par">Go back and ensure you entered the correct email address.</p>
                 <div>
-                    <button class="btn">Go Back</button>
+                    <button class="btn" id="back">Go Back</button>
                 </div>
-            
             </div>
+            <div class="sep1"></div>
             <div class="box">
                 <p class="par">Try an alternate registration method. (Social Security Number + Name + Birthdate)</p>
                 <div>
@@ -32,6 +34,7 @@
                 </div>
                 
             </div>
+            <div class="sep1"></div>
             <div class="box">
                 <p class="par" id="con">Contact support for assistance.</p>
                 <div>
@@ -41,6 +44,18 @@
             </div>
         </div>
     </div>
-   
+    
 </body>
 </html>
+<script>
+document.getElementById("back").addEventListener("click",function(){
+   window.location.href= "peopleone_sign_in.html"
+})
+document.getElementById("alter").addEventListener("click",function(){
+window.location.href="createAccountPage.html"
+})
+document.getElementById("net").addEventListener("click",function(){
+window.location.href="customersupport.html"
+})
+
+</script>
