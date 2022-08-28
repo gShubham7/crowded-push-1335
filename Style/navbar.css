@@ -299,7 +299,7 @@ nav {
     }
 
     .nav {
-        width: 155%;
+        width: 100%;
         display: flex;
         align-items: center;
         padding: 15px;
