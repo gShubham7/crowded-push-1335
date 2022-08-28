@@ -9,6 +9,7 @@ body{
 }
 
 #partner_container{
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 
@@ -81,5 +82,9 @@ body{
   }
   .uabb-heading{
     text-align: center;
+  }
+  .list_of_links ul li {
+    margin-bottom: 15px;
+    list-style-type: none;
   }
 }
