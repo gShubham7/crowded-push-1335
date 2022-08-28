@@ -64,17 +64,14 @@ header {
 }
 
 #nav_w {
+    display: block;
     max-width: 15em;
     min-width: 15em;
     width: 15em;
     margin: 0;
     background-color: #F4F5F7;
     text-align: left;
-    font-size: 1em;
-    -webkit-transform: translateX(0);
-    transition: transform 0.3s;
-    transform: translateX(0);
-    display: block;
+    font-size: 1em;    
 }
 
 #nav_w1 {
@@ -107,7 +104,7 @@ header {
     color: #000;
     font-weight: 600;
     transition: background-color 0.5s;
-    text-decoration: none !important;
+    text-decoration: none;
     position: relative;
 }
 
@@ -275,4 +272,105 @@ footer {
 
 .disclaimer a:hover {
     color: #495057;
+}
+
+#mobile_nav,
+#nav_w1>li:first-child {
+    display: none;
+}
+
+@media all and (min-width:769px) and (max-width:992px) {
+
+    #mobile_nav,
+    #nav_w1>li:first-child {
+        display: block;
+    }
+
+    #nav {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .sign_in_btn {
+        font-size: 0.7em;
+        margin-left: 3em;
+    }
+
+    .logo_open {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .nav_close_menu {
+        width: 12%;
+        margin-left: 2em;
+    }
+
+    #nav_w {
+        position: fixed;
+        top: 0;
+        padding-top: 2rem;
+        z-index: 1000;
+        height: 100vh;
+    }
+}
+
+@media all and (min-width:420px) and (max-width:768px) {
+    #mobile_nav {
+        display: block;
+    }
+
+    #nav {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        width: 40%;
+        margin-left: 10px;
+    }
+
+    .sign_in_btn {
+        font-size: 0.7em;
+        margin-left: 3em;
+    }
+
+    .logo_open {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .nav_close_menu {
+        width: 12%;
+        margin-left: 2em;
+    }
+
+    #nav_w {
+        position: fixed;
+        top: 0;
+        padding-top: 2rem;
+        z-index: 1000;
+        height: 100vh;
+        display: none;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    #container_1 {
+        display: block;
+        margin: auto;
+        margin-top: 10em;
+    }
+
+    #container_1>div {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
 }

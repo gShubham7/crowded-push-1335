@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Style/navbar.css" />
     <link rel="stylesheet" href="Style/footer.css" />
     <link rel="icon" href="SPARK-America.png" />
+    <link rel="stylesheet" href="./Style/JoinTheMovement.css" />
     <script
       src="https://kit.fontawesome.com/0abc29f6ea.js"
       crossorigin="anonymous"
@@ -16,75 +17,6 @@
       src="https://kit.fontawesome.com/26fc26f383.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-      * {
-        font-family: "Roboto", sans-serif;
-        line-height: 25px;
-      }
-
-      #joincontainer {
-        margin-top: 80px;
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-      }
-      .uabb_heading {
-        font-weight: lighter;
-        color: #222222;
-        font-size: 30px;
-      }
-      .separator {
-        border-top: 3px solid #d7282f;
-        width: 15%;
-        display: inline-block;
-        margin: 20px 0px;
-        height: 3px;
-      }
-      #joincontainer a {
-        background: #0082ca;
-        text-decoration: unset;
-        color: white;
-        padding: 13px 25px;
-      }
-      #first {
-        width: 80%;
-      }
-      #second,
-      #third,
-      #four {
-        width: 70%;
-        margin: 50px;
-      }
-      #joincontainer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 5px;
-        font-weight: bold;
-      }
-      #icon a:hover {
-        color: rgb(252, 193, 0);
-      }
-      #Button_ > a:hover {
-        background-color: rgb(252, 151, 0);
-      }
-      #Icon {
-        font-size: 20px;
-      }
-      #joincontainer h4 {
-        font-size: 25px;
-      }
-      #line {
-        border: 1px solid #d7282f;
-        width: 65%;
-        margin: auto;
-        margin-bottom: 50px;
-        margin-top: 20px;
-      }
-    </style>
   </head>
   <body>
     <nav class="position_index">
@@ -94,7 +26,7 @@
     <center>
       <div class="navbar_icon"></div>
     </center>
-    <div id="joincontainer">
+    <div id="partner_container">
       <div id="first">
         <h2 class="uabb_heading">
           <span class="uabb-heading-text"
@@ -142,7 +74,7 @@
 
       <div id="Button_">
         <div id="icon">
-          <a href="#">
+          <a href="registerPage.html">
             <i class="fa-solid fa-square-check" id="Icon"></i>
             <span>REGISTER HERE</span>
           </a>
@@ -176,7 +108,7 @@
       <div id="four">
         <div>
           <div>
-            <h4>
+            <h4 class="uabb-heading">
               <span>FIT CITY CHALLENGE</span>
             </h4>
 
@@ -205,28 +137,9 @@
   </body>
 </html>
 <script type="module">
-  import {navbar,footer,navbar2} from './Componets/navbar_footer.js';
-
+  import { navbar, footer, navbar2 } from "./Componets/navbar_footer.js";
   document.querySelector("nav").innerHTML = navbar();
   document.querySelector("footer").innerHTML = footer();
   document.querySelector(".navbar_icon").innerHTML = navbar2();
 </script>
-
-
-<script>
-  function getmenu(){
-  event.preventDefault();
-  document.querySelector(".list_of_links").style.display = "block";
-  document.querySelector("#menu_icon_delete").style.display = "block";
-  document.querySelector("#menu_icon_div").style.display = "none";
-  document.querySelector("#joincontainer").style.marginTop = "270px";
-}
-
-function Delete(){
-  event.preventDefault();
-  document.querySelector("#menu_icon_delete").style.display = "none";
-  document.querySelector("#menu_icon_div").style.display = "block";
-  document.querySelector(".list_of_links").style.display = "none";
-  document.querySelector("#joincontainer").style.marginTop = "30px";
-}
-</script>
+<script src="./Script/navbar_media.js"></script>

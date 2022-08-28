@@ -50,8 +50,8 @@ label {
     margin: 9px 0;
 }
 
-#mail:focus{
-    outline: 3px solid #afcbe7;    
+#mail:focus {
+    outline: 3px solid #afcbe7;
 }
 
 .note {
@@ -141,7 +141,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-@media all and (min-width:420px) and (max-width:768px) {
+@media all and (min-width:360px) and (max-width:768px) {
     .logo {
         width: 80%;
     }
