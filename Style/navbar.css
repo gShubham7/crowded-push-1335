@@ -1,10 +1,8 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
-
 }
 
 body {
@@ -16,11 +14,12 @@ body {
 
 .fa-instagram {
     color: orangered;
-    margin-right: 15px;
+    font-size: 20px;
 }
 
 .fa-square-facebook {
-    color: rgb(54, 137, 220)
+    color: #3B5998;
+    font-size: 20px;
 }
 
 nav {
@@ -56,7 +55,9 @@ nav {
 /* List Section */
 #category {
     text-align: center;
-    margin-top: -5px;
+    margin: auto;
+    margin-top: -18px;
+    width: 95%;
 }
 
 #line {
@@ -68,7 +69,7 @@ nav {
 }
 
 #lists {
-    width: 61.5%;
+    width: 65.5%;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -94,7 +95,7 @@ nav {
 
 #lists>ul:last-child {
     list-style-type: none;
-    width: 10%;
+    width: 8%;
     display: flex;
     justify-content: space-between;
 }
@@ -102,7 +103,7 @@ nav {
 .nav {
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding: 15px;
     justify-content: space-between;
 }
@@ -215,7 +216,6 @@ nav {
       width:100%;
       display: flex;
       align-items: center;
-      padding: 15px;
       justify-content: space-between;
   }
   
@@ -266,7 +266,16 @@ nav {
   }
 }
 
-@media (min-width:482px) and (max-width:768px) {
+  
+  @media (min-width:270px) and (max-width:481px){
+
+    #menu_icon,
+    #menu_icon_delete {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width:482px) and (max-width:820px) {
     nav {
         display: none;
     }
@@ -288,10 +297,18 @@ nav {
         text-align: left;
         margin-left: 60px;
     }
+
+    .nav {
+        width: 155%;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+    }
 }
 
 
-@media (min-width:769px) and (max-width:1500px) {
+@media (min-width:821px) and (max-width:1500px) {
     nav {
         display: block;
     }
